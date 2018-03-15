@@ -1,0 +1,95 @@
+---------------------------------------------------------------
+[ 2018-02-12T11:10:11+08:00 ] 121.42.77.167 203.208.60.202 GET /blog/home/editor/article_list/sign/20
+[ info ] www.zhangheteng.com/blog/home/editor/article_list/sign/20 [运行时间：0.337973s][吞吐率：2.96req/s] [内存消耗：3,444.22kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => 'article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip,deflate,br',
+  'connection' => 'keep-alive',
+  'from' => 'googlebot(at)googlebot.com',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+)
+[ info ] [ PARAM ] array (
+  'sign' => '20',
+)
+[ info ] [ RUN ] app\home\controller\Editor->article_list[ /data/home/qxu1141810136/htdocs/blog/application/home/controller/Editor.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/home/view/editor/article_list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004524s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002180s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.002471s ]
+[ sql ] [ SQL ] UPDATE `summary_editor`  SET `page_view`=256  WHERE  `id` = 20 [ RunTime:0.280732s ]
+---------------------------------------------------------------
+[ 2018-02-12T11:13:11+08:00 ] 121.42.77.167 86.49.188.134 GET /blog/wp-includes/wlwmanifest.xml
+[ info ] www.zhangheteng.com/blog/wp-includes/wlwmanifest.xml [运行时间：0.028313s][吞吐率：35.32req/s] [内存消耗：1,955.39kb] [文件加载：40]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'wlwmanifest.xml',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'en-US,en;q=0.5',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=h2q1t042sd3iraan4p16g23ht0',
+  'host' => 'www.zhangheteng.com',
+  'keep-alive' => '300',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-12T19:56:01+08:00 ] 121.42.77.167 106.11.152.200 GET /blog/home/editor/article_list/sign/20
+[ info ] www.zhangheteng.com/blog/home/editor/article_list/sign/20 [运行时间：0.102050s][吞吐率：9.80req/s] [内存消耗：3,444.24kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => 'article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'YisouSpider',
+)
+[ info ] [ PARAM ] array (
+  'sign' => '20',
+)
+[ info ] [ RUN ] app\home\controller\Editor->article_list[ /data/home/qxu1141810136/htdocs/blog/application/home/controller/Editor.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/home/view/editor/article_list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024769s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002224s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.002449s ]
+[ sql ] [ SQL ] UPDATE `summary_editor`  SET `page_view`=257  WHERE  `id` = 20 [ RunTime:0.025812s ]

@@ -1,0 +1,817 @@
+@charset "utf-8";
+/*
+  *所有标记的margin、padding都在使用时具体定义
+ */
+*{margin:0;padding:0; font-size: 14px;}
+/*
+ * 修正IE5.x和IE6的斜体溢出bug
+*/
+* html body{
+    overflow: visible;
+    overflow-x: hidden;
+}
+* html iframe, * html frame{
+    overflow: auto;
+}
+* html frameset{
+    overflow: hidden;
+}
+
+/*
+ 基本标签默认样式取消
+*/
+body{color:#000;background:#fff;font:12px/22px Verdana,Arial,sans-serif,"Times New Roman",宋体;text-align:center;overflow-x: hidden;}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{margin:0;padding:0;}
+input,select{font-size:12px;vertical-align:middle;}
+/*
+* 设置内容左对齐
+*/
+body div{text-align:left;}
+
+/*
+* 标签属性
+* @desc 强制输入时内容超出时换行
+*/
+textarea,input{	word-wrap:break-word;word-break:break-all;padding:0px;}
+/*
+* 清除ul列表标记的样式
+*/
+li{list-style-type:none;}
+/*
+* 定义图片边框
+*/
+img{border:0 none; display: block;}
+/*
+* 定义默认的链接样式
+*/
+a:link, a:visited{
+    color:#000;
+    text-decoration: none;
+}
+a:hover{
+    color:#000;
+    text-decoration: underline;
+}
+
+
+/*页面样式开始*/
+.blog_box{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.top_log{
+    width: 100%;
+    height:80px;
+    overflow: hidden;
+    border-bottom: 1px solid #bfbfbf;
+    background: url("../temp/index/logo.png") no-repeat center;
+    background-size: auto 100%;
+    margin-top: 30px;
+}
+.jiathis_style  .ckepopBottom{
+    display: none !important;
+}
+/*头部导航*/
+.breadcrumb {
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 99;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 30px;
+    height: 30px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+    overflow: visible !important;
+}
+.personal_home{
+    width: auto;
+    height:100%;
+    line-height: 30px;
+    padding: 0 15px;
+    float: left;
+    margin-left: 10%;
+}
+.personal_home a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+nav .dope,.classify{
+    width: 20px;
+    height:30px;
+    margin: 0 5px;
+    padding: 0 5px;
+    float: left;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+}
+.login_nav{
+    width: auto;
+    height:30px;
+    width: 70px;
+    position: relative;
+}
+nav .dope i,.classify i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.dope .tip_bar_num{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    background: #dd514c;
+    text-align: center;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 9px;
+    animation: flash infinite 5s ease-in-out;
+    display: none;
+}
+#message_memory{
+    display: none;
+}
+.classify .classify_box{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 120px;
+    padding: 15px 0;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    display: none;
+}
+.dope .classify_box{
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    width: 200px;
+    padding: 15px 0 0 0;
+    height: auto;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    display: none;
+}
+.ignore{
+    width: 90%;
+    padding: 5px 5%;
+    color: #999;
+    line-height: 14px !important;
+    border-bottom: 1px #f5f5f5 solid;
+    text-align: right;
+}
+.ignore > span{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+}
+.dope:hover .classify_box,.classify:hover .classify_box{
+    display: block;
+    animation: fadeInDown ease-out .4s;
+    -webkit-animation: fadeInDown ease-out .4s;
+    -moz-animation: fadeInDown ease-out .4s;
+    -ms-animation: fadeInDown ease-out .4s;
+}
+.classify .classify_box a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-decoration: none;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+}
+.dope .classify_box a{
+    display: block;
+    width: 90%;
+    padding: 5px 5%;
+    text-decoration: none;
+    color: #999;
+    font-size: 11px;
+    line-height: 14px !important;
+    border-bottom: 1px #f5f5f5 solid;
+}
+.classify .classify_box a:hover{
+    background-color: #f7f7f7;
+}
+.dope .classify_box a:hover{
+    background-color: #f7f7f7;
+}
+.dope .classify_box .horn,.classify .classify_box .horn{
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -4px;
+    left: 65px;
+    transform: rotate(55deg);
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+}
+.dope .classify_box .horn{
+    left: 145px !important;
+    background-color: #FFFFFF;
+}
+nav .tip_right{
+    float: right;
+    width: auto;
+    max-width: 300px;
+    height: 100%;
+    margin-right: 10%;
+}
+nav .tip_right > div:hover{
+    background-color: #d8d8d8;
+}
+nav .tip_bar{
+    float: left;
+    width: auto;
+    height: 100%;
+    position: relative;
+    font-size: 0.8em;
+    padding-right: 5px;
+}
+nav .tip_bar > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+nav .tip_bar .head_portrait{
+    width: 20px !important;
+    height: 20px !important;
+    margin: 5px !important;
+    overflow: hidden;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    float: left;
+}
+nav .tip_bar .head_portrait i{
+    font-size: 18px !important;
+}
+nav .tip_bar .head_portrait img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+nav .tip_bar .tip_bar_con{
+    width: 300px;
+    height: 260px;
+    overflow: hidden;
+    position: absolute;
+    top: 28px;
+    left: -130px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    display: none;
+    background-color: #FFFFFF;
+}
+nav .tip_bar:hover .tip_bar_con{
+    display: block;
+    animation: fadeInDown ease-out .4s;
+    -webkit-animation: fadeInDown ease-out .4s;
+    -moz-animation: fadeInDown ease-out .4s;
+    -ms-animation: fadeInDown ease-out .4s;
+}
+nav .tip_bar .tip_bar_con .bg-wrap{
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+nav .tip_bar .tip_bar_con .bg-wrap img{
+    display: block;
+    border: none;
+    width: 100%;
+    height:80px;
+}
+nav .tip_bar .tip_bar_con .my_bg_info{
+    background-color: #f3f6f8;
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    height: 63px;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname .bg-avatar{
+    width: 82px;
+    height:82px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname .bg-avatar img{
+    display: block;
+    border: none;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname .bg-avatar a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 82px;
+    text-align: center;
+    display: block;
+    height: 82px;
+    width:  82px;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname .bg-avatar i{
+    font-size: 70px;
+    color: #646464;
+
+}
+nav .tip_bar .tip_bar_con .my_bg_info .nickname span{
+    margin-left: 100px;
+    font-size: 1.1em;
+    cursor: default;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .bg-numb{
+    width: 100%;
+    height: 30px;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .bg-numb a{
+    display: block;
+    text-decoration: none;
+    float: left;
+    width: 30%;
+    height:100%;
+    line-height: 30px;
+    font-size: 0.9em;
+}
+nav .tip_bar .tip_bar_con .my_bg_info .bg-numb a span{
+    margin-left: 5px;
+}
+nav .tip_bar .tip_bar_con .grade_bar{
+    width: 100%;
+    padding: 0 20px;
+    height:50px;
+    background-color: #FFFFFF;
+    line-height: 25px;
+}
+nav .tip_bar .tip_bar_con .grade_bar .grade,nav .tip_bar .tip_bar_con .grade_bar .experience{
+    height:25px;
+    font-size: 12px;
+    color: #999;
+}
+nav .tip_bar .tip_bar_con .grade_bar .experience > div{
+    font-size: 12px;
+    float: left;
+}
+nav .tip_bar .tip_bar_con .grade_bar .experience > span{
+    font-size: 12px;
+}
+nav .tip_bar .tip_bar_con .grade_bar .experience > div.strip{
+    width: 130px;
+    height:11px;
+    border: 1px solid #999;
+    margin: 7px 5px;
+}
+nav .tip_bar .tip_bar_con .grade_bar .experience > div.strip >div{
+    height: 11px;
+    background-color: #0e90d2;
+}
+nav .tip_bar .link-wrap{
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    padding-top: 8px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #eeeeee;
+}
+nav .tip_bar .link-wrap > div{
+    width: 50%;
+    height: 28px;
+    float: left;
+    line-height: 32px;
+}
+nav .tip_bar .link-wrap > div a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #444;
+}
+nav .tip_bar .link-wrap > div a i{
+    margin: 0 7px;
+}
+a.login_bar{
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+a.login_bar i{
+    font-size: 0.8em;
+}
+a.register{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    font-size: 0.8em;
+    text-align: center;
+    background: #d8d8d8;
+    text-decoration: none;
+    display: none;
+}
+.login_nav:hover a.register{
+    display: block;
+    animation: fadeInDown ease-out .4s;
+    -webkit-animation: fadeInDown ease-out .4s;
+    -moz-animation: fadeInDown ease-out .4s;
+    -ms-animation: fadeInDown ease-out .4s;
+}
+.login_nav > a:hover{
+    color: #FFFFFF;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+    background-color: #e9e9e9;
+}
+.top_nav{
+    width: 1140px;
+    height: 50px;
+    margin: 0 auto;
+    border-right: 1px solid #bfbfbf;
+}
+.nav_box{
+    width: auto;
+    height: 50px;
+    float: left;
+    border-right: 1px solid #bfbfbf;
+}
+.nav_box > div{
+    width: auto;
+    height:50px;
+    line-height: 50px;
+    padding: 0 25px;
+    font-family: '黑体';
+    font-size: 16px;
+    color: #767676;
+    float: left;
+    border-left: 1px solid #bfbfbf;
+}
+.nav_box > div > a{
+    color: #767676;
+}
+.search_box{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #bfbfbf;
+    float: right;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+.search_box > .color{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9e9e9+0,e9e9e9+0,ffffd7+0,faffd7+5,ffffd7+5,f8ffd6+9,e9fed8+13,dffdd9+13,f8ffd6+18,d0fbdd+20,d0fbdd+20,dffed9+23,92a7c5+26,92a7c5+26,dffdd9+27,d0fbdd+29,d0fbdd+29,aeeee2+32,aeefe3+35,a4eae2+38,a5eae1+38,abede4+38,a4eae2+39,a4eae2+39,96dae1+47,93d9e2+48,93d8e1+52,92cbda+55,92c7d8+57,92c7d8+57,92c7d8+63,92bbd1+73,94aac8+73,9196b8+81,92a7c6+83,8f82aa+93,9197b8+93,8f82ab+99,8e80a2+99,8e80a2+100 */
+    background: #e9e9e9 !important; /* Old browsers */
+    background: -moz-linear-gradient(left,  #e9e9e9 0%, #e9e9e9 0%, #ffffd7 0%, #faffd7 5%, #ffffd7 5%, #f8ffd6 9%, #e9fed8 13%, #dffdd9 13%, #f8ffd6 18%, #d0fbdd 20%, #d0fbdd 20%, #dffed9 23%, #92a7c5 26%, #92a7c5 26%, #dffdd9 27%, #d0fbdd 29%, #d0fbdd 29%, #aeeee2 32%, #aeefe3 35%, #a4eae2 38%, #a5eae1 38%, #abede4 38%, #a4eae2 39%, #a4eae2 39%, #96dae1 47%, #93d9e2 48%, #93d8e1 52%, #92cbda 55%, #92c7d8 57%, #92c7d8 57%, #92c7d8 63%, #92bbd1 73%, #94aac8 73%, #9196b8 81%, #92a7c6 83%, #8f82aa 93%, #9197b8 93%, #8f82ab 99%, #8e80a2 99%, #8e80a2 100%) !important; /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #e9e9e9 0%,#e9e9e9 0%,#ffffd7 0%,#faffd7 5%,#ffffd7 5%,#f8ffd6 9%,#e9fed8 13%,#dffdd9 13%,#f8ffd6 18%,#d0fbdd 20%,#d0fbdd 20%,#dffed9 23%,#92a7c5 26%,#92a7c5 26%,#dffdd9 27%,#d0fbdd 29%,#d0fbdd 29%,#aeeee2 32%,#aeefe3 35%,#a4eae2 38%,#a5eae1 38%,#abede4 38%,#a4eae2 39%,#a4eae2 39%,#96dae1 47%,#93d9e2 48%,#93d8e1 52%,#92cbda 55%,#92c7d8 57%,#92c7d8 57%,#92c7d8 63%,#92bbd1 73%,#94aac8 73%,#9196b8 81%,#92a7c6 83%,#8f82aa 93%,#9197b8 93%,#8f82ab 99%,#8e80a2 99%,#8e80a2 100%) !important; /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #e9e9e9 0%,#e9e9e9 0%,#ffffd7 0%,#faffd7 5%,#ffffd7 5%,#f8ffd6 9%,#e9fed8 13%,#dffdd9 13%,#f8ffd6 18%,#d0fbdd 20%,#d0fbdd 20%,#dffed9 23%,#92a7c5 26%,#92a7c5 26%,#dffdd9 27%,#d0fbdd 29%,#d0fbdd 29%,#aeeee2 32%,#aeefe3 35%,#a4eae2 38%,#a5eae1 38%,#abede4 38%,#a4eae2 39%,#a4eae2 39%,#96dae1 47%,#93d9e2 48%,#93d8e1 52%,#92cbda 55%,#92c7d8 57%,#92c7d8 57%,#92c7d8 63%,#92bbd1 73%,#94aac8 73%,#9196b8 81%,#92a7c6 83%,#8f82aa 93%,#9197b8 93%,#8f82ab 99%,#8e80a2 99%,#8e80a2 100%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#8e80a2',GradientType=1 ) !important; /* IE6-9 */
+}
+.search_box > input{
+    display: block;
+    border: none;
+    outline: none;
+    width: 250px;
+    height:26px;
+    padding: 7px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    float: left;
+    color: #8d8d8d;
+}
+.search_box > div.search_btn{
+    width: 30px;
+    height: 40px;
+    float: left;
+    cursor: pointer;
+    color: #8d8d8d;
+    line-height: 30px;
+    text-align: center;
+}
+.search_box > div.search_btn > i{
+    font-size: 21px;
+    color: #8d8d8d;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*边框动画的边框样式*/
+.border_animate,.border_animate1 {
+    position: relative;
+}
+.border_animate > div[class^="border-"],.border_animate1 > div[class^="border-"]{
+    background: rgb(52,152,219);
+    background: -moz-linear-gradient(top,  rgba(52,152,219,1) 0%, rgba(130,205,255,1) 20%, rgba(216,239,255,1) 42%, rgba(216,239,255,1) 56%, rgba(52,152,219,1) 78%, rgba(130,205,255,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(52,152,219,1) 0%,rgba(130,205,255,1) 20%,rgba(216,239,255,1) 42%,rgba(216,239,255,1) 56%,rgba(52,152,219,1) 78%,rgba(130,205,255,1) 100%);
+    background: linear-gradient(to bottom,  rgba(52,152,219,1) 0%,rgba(130,205,255,1) 20%,rgba(216,239,255,1) 42%,rgba(216,239,255,1) 56%,rgba(52,152,219,1) 78%,rgba(130,205,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#82cdff',GradientType=0 );
+}
+.border_animate .border-left {
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+}
+.border_animate .border-bottom {
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+.border_animate .border-top {
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.border_animate .border-right {
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+.border_animate1 .border-left {
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+}
+.border_animate1 .border-bottom {
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+}
+.border_animate1 .border-top {
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.border_animate1 .border-right {
+    width: 2px;
+    height: 0px;
+    position: absolute;
+    right: -1px;
+    top: 0;
+}
+/*边框动画的边框样式*/
+
+/*个人推荐*/
+.my_propose{
+    width: 1140px;
+    height: 400px;
+    position: relative;
+    margin: 90px auto 0 auto;
+    border-top: 2px solid #3498db;
+    border-bottom: 2px solid #3498db;
+    background-color: #f7f7f7;
+}
+.propose_title{
+    width: 330px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border-top: 2px solid #3498db;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -165px;
+    overflow: hidden;
+}
+.propose_title > h1{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-family: "黑体";
+    color: #6f7678;
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+.propose_title > h2{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: "宋体";
+    color: #869093;
+    line-height: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+.propose_content{
+    width: 100%;
+    height: 300px;
+    margin: 60px auto 40px auto;
+}
+.propose_drawer{
+    width: 330px;
+    height: 98%;
+    margin: 0 25px;
+    float: left;
+    border-top: 2px solid #d7dee0;
+    transition: all linear .4s;
+}
+.propose_drawer > a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+.propose_drawer:hover{
+    border-top-color: #f7f7f7;
+    transition: all linear .4s;
+}
+.propose_drawer > a .drawer_title{
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #d7dee0;
+}
+.propose_drawer > a .drawer_title >h2{
+    font-family: "黑体";
+    font-size: 18px;
+    height: 40px;
+    width: 90%;
+    line-height: 40px;
+    margin: 0 auto;
+    color: #3498db;
+    font-weight: normal;
+    overflow: hidden;
+}
+.propose_drawer > a .drawer_title >h3{
+    font-family: "黑体";
+    font-size: 12px;
+    height: 30px;
+    width: 90%;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #82cdff;
+    font-weight: normal;
+    overflow: hidden;
+}
+.p_details{
+    font-family: "黑体";
+    font-size: 12px;
+    height: 30px;
+    width: 90%;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #82cdff;
+    font-weight: normal;
+    overflow: hidden;
+}
+.p_details > span{
+    margin: 0 10px;
+}
+.p_details > span i{
+    margin-right: 5px;
+}
+.propose_drawer > a .drawer_introduce{
+    width: 90%;
+    height: 190px;
+    margin: 20px auto 17px auto;
+    overflow: hidden;
+    text-indent: 2em;
+    font-size: 12px;
+    font-family: "黑体";
+    color: #869093;
+}
+/*个人推荐*/
+
+/*最新发布*/
+.latest_release{
+    width: 1140px;
+    height: 400px;
+    position: relative;
+    margin: 90px auto 0 auto;
+    border: 2px solid #b7b7b7;
+    background-color: #FFFFFF;
+}
+.release_title{
+    width: 330px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-top: 2px solid #b7b7b7;
+    border-bottom: 2px solid #b7b7b7;
+    position: absolute;
+    top: -37px;
+    left: 50%;
+    margin-left: -165px;
+    overflow: hidden;
+    font-family: "黑体";
+    color: #6f7678;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+}
+.release_content{
+    width: 100%;
+    height: 280px;
+    margin: 100px auto 40px auto;
+}
+/*最新发布*/
+
+.footer{border-top:1px solid #E8E8E8; padding:15px 0;font-family:tahoma,Arial;font-size:12px;color:#999;line-height:22px;text-align:center; margin-top: 30px; background-color: #1f1f1f;}
+.footer a,.footer a:hover{color:#999}
+.container-fluid{
+    text-align: center;
+}
+
+.tip_top_a{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: zoomIn 1s linear;
+    -webkit-animation: zoomIn 0.5s linear;
+    -moz-animation: zoomIn 0.5s linear;
+    -ms-animation: zoomIn 0.5s linear;
+}
+.fwltj{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.loader {
+    margin: 1em auto;
+}
+.loader--audioWave {
+    width: 3em;
+    height: 2em;
+    background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
+    background-repeat: no-repeat;
+    background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+    animation: audioWave 1.5s linear infinite;
+}
+@keyframes audioWave {
+    25% {
+        background: linear-gradient(#3498db, #3498db) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
+        background-repeat: no-repeat;
+        background-size: 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+    }
+    37.5% {
+        background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#3498db, #3498db) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
+        background-repeat: no-repeat;
+        background-size: 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em;
+    }
+    50% {
+        background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#3498db, #3498db) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
+        background-repeat: no-repeat;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em, 0.5em 0.25em;
+    }
+    62.5% {
+        background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#3498db, #3498db) 1.875em 50%, linear-gradient(#9b59b6, #9b59b6) 2.5em 50%;
+        background-repeat: no-repeat;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em, 0.5em 0.25em;
+    }
+    75% {
+        background: linear-gradient(#9b59b6, #9b59b6) 0 50%, linear-gradient(#9b59b6, #9b59b6) 0.625em 50%, linear-gradient(#9b59b6, #9b59b6) 1.25em 50%, linear-gradient(#9b59b6, #9b59b6) 1.875em 50%, linear-gradient(#3498db, #3498db) 2.5em 50%;
+        background-repeat: no-repeat;
+        background-size: 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 0.25em, 0.5em 2em;
+    }
+}
+.show_associate{
+    animation: fadeInDown ease-out .4s;
+    -webkit-animation: fadeInDown ease-out .4s;
+    -moz-animation: fadeInDown ease-out .4s;
+    -ms-animation: fadeInDown ease-out .4s;
+}

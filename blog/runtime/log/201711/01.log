@@ -1,0 +1,2794 @@
+---------------------------------------------------------------
+[ 2017-11-01T09:30:10+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.455194s][吞吐率：2.20req/s] [内存消耗：1,627.25kb] [文件加载：44]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:30:10+08:00 ] ::1 ::1 GET /think_web/index.php/login.html
+[ info ] localhost/think_web/index.php/login.html [运行时间：0.213485s][吞吐率：4.68req/s] [内存消耗：1,800.32kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/login\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:30:17+08:00 ] ::1 ::1 POST /think_web/index.php/login/index/index.html
+[ info ] localhost/think_web/index.php/login/index/index.html [运行时间：0.294785s][吞吐率：3.39req/s] [内存消耗：2,428.84kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'pass_word' => '123456',
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013121s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.009298s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `user_name` = 'admin'  AND `pass_word` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001190s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `land`=17,`ip_next`='127.0.0.1',`login_time`=1509499817  WHERE  `id` = 1 [ RunTime:0.075851s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:30:19+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.166759s][吞吐率：6.00req/s] [内存消耗：2,421.79kb] [文件加载：57]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001202s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.007536s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.010840s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:30:19+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.094431s][吞吐率：10.59req/s] [内存消耗：1,707.80kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => '__guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:32:17+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.077048s][吞吐率：12.98req/s] [内存消耗：2,421.58kb] [文件加载：57]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499820',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001253s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.006721s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006504s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000932s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:32:17+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.038273s][吞吐率：26.13req/s] [内存消耗：1,708.20kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499820',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:32:35+08:00 ] ::1 ::1 GET /think_web/home/index/editor
+[ info ] localhost/think_web/home/index/editor [运行时间：0.052625s][吞吐率：19.00req/s] [内存消耗：1,704.84kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'editor',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499938',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:32:43+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.206696s][吞吐率：4.84req/s] [内存消耗：1,876.75kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499938',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:37:41+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.084632s][吞吐率：11.82req/s] [内存消耗：2,650.90kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499938',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.006968s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004706s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:37:41+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.048498s][吞吐率：20.62req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509499938',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:37:43+08:00 ] ::1 ::1 GET /think_web/editor
+[ info ] localhost/think_web/editor [运行时间：0.050486s][吞吐率：19.81req/s] [内存消耗：1,446.16kb] [文件加载：45]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'editor',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500262',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:38:14+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.047755s][吞吐率：20.94req/s] [内存消耗：1,745.08kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500262',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:38:16+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.100246s][吞吐率：9.98req/s] [内存消耗：2,650.90kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500262',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001303s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.009716s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005369s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:38:16+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.055829s][吞吐率：17.91req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500262',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:38:20+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.047464s][吞吐率：21.07req/s] [内存消耗：1,745.10kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500296',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:40:57+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.100547s][吞吐率：9.95req/s] [内存消耗：2,651.09kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500296',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013502s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.007599s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.009792s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000618s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:40:57+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.046626s][吞吐率：21.45req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500296',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:41:24+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.082885s][吞吐率：12.06req/s] [内存消耗：2,647.09kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500458',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002041s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.008365s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004202s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:41:24+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.047383s][吞吐率：21.10req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500458',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:42:53+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.089700s][吞吐率：11.15req/s] [内存消耗：2,651.09kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500485',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010494s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.004893s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005905s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:42:53+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.056250s][吞吐率：17.78req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500485',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:43:19+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.180411s][吞吐率：5.54req/s] [内存消耗：2,651.09kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500574',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011385s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.005186s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004911s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:43:19+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.059143s][吞吐率：16.91req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500574',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:46:17+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.079688s][吞吐率：12.55req/s] [内存消耗：2,423.06kb] [文件加载：57]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500599',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013985s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.005566s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005822s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:46:17+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.047642s][吞吐率：20.99req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500599',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:46:31+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.066957s][吞吐率：14.93req/s] [内存消耗：2,651.12kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500778',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001188s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.004881s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006509s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2017-11-01T09:46:31+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.051623s][吞吐率：19.37req/s] [内存消耗：1,708.39kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500778',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T09:46:33+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.051834s][吞吐率：19.29req/s] [内存消耗：1,745.10kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500792',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T14:51:10+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.045412s][吞吐率：22.02req/s] [内存消耗：1,627.13kb] [文件加载：44]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T14:51:10+08:00 ] ::1 ::1 GET /think_web/index.php/login.html
+[ info ] localhost/think_web/index.php/login.html [运行时间：0.043239s][吞吐率：23.13req/s] [内存消耗：1,800.18kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/login\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T14:51:19+08:00 ] ::1 ::1 POST /think_web/index.php/login/index/index.html
+[ info ] localhost/think_web/index.php/login/index/index.html [运行时间：0.312271s][吞吐率：3.20req/s] [内存消耗：2,428.78kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '33',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'script',
+  'pass_word' => '123456',
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005273s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.105750s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `user_name` = 'script'  AND `pass_word` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001199s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `land`=21,`ip_next`='127.0.0.1',`login_time`=1509519079  WHERE  `id` = 2 [ RunTime:0.112475s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:51:21+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.095975s][吞吐率：10.42req/s] [内存消耗：2,637.95kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001303s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.008775s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 1 [ RunTime:0.002829s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 1 [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.007600s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001063s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:51:21+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.037309s][吞吐率：26.80req/s] [内存消耗：1,707.53kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T14:51:43+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.202185s][吞吐率：4.95req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'black',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010617s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006015s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='black'  WHERE  `id` = 2 [ RunTime:0.148486s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:34+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.207442s][吞吐率：4.82req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'blue',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025692s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005579s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='blue'  WHERE  `id` = 2 [ RunTime:0.133109s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:38+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.262073s][吞吐率：3.82req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'green',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.067136s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='green'  WHERE  `id` = 2 [ RunTime:0.154494s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:42+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.137953s][吞吐率：7.25req/s] [内存消耗：2,391.86kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'red',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009855s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005206s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='red'  WHERE  `id` = 2 [ RunTime:0.080927s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:45+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.239804s][吞吐率：4.17req/s] [内存消耗：2,391.86kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'red',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010544s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004861s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='red'  WHERE  `id` = 2 [ RunTime:0.184798s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:48+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.217109s][吞吐率：4.61req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'pink',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009944s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005691s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='pink'  WHERE  `id` = 2 [ RunTime:0.163672s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:55+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.150924s][吞吐率：6.63req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'wall',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001086s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005051s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='wall'  WHERE  `id` = 2 [ RunTime:0.107407s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:53:57+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.250749s][吞吐率：3.99req/s] [内存消耗：2,391.87kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'black',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010795s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005944s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='black'  WHERE  `id` = 2 [ RunTime:0.195249s ]
+---------------------------------------------------------------
+[ 2017-11-01T14:57:56+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.053858s][吞吐率：18.57req/s] [内存消耗：1,745.10kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; __guid=111872281.2664285647611436000.1505316470222.8914; pgv_pvi=4941409280; PHPSESSID=fusdh5rkan17ok4nl8pp7ir4df; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508942786,1509328172,1509499820; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509500792',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T15:58:44+08:00 ] ::1 ::1 POST /think_web/home/index/exit_login.html
+[ info ] localhost/think_web/home/index/exit_login.html [运行时间：0.038078s][吞吐率：26.26req/s] [内存消耗：1,650.48kb] [文件加载：47]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'exit_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->exit_login[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T15:58:46+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.029666s][吞吐率：33.71req/s] [内存消耗：1,628.74kb] [文件加载：44]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T15:58:46+08:00 ] ::1 ::1 GET /think_web/index.php/login.html
+[ info ] localhost/think_web/index.php/login.html [运行时间：0.038840s][吞吐率：25.75req/s] [内存消耗：1,801.45kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/login\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T15:58:49+08:00 ] ::1 ::1 GET /think_web/index.php/login.html
+[ info ] localhost/think_web/index.php/login.html [运行时间：0.042795s][吞吐率：23.37req/s] [内存消耗：1,801.45kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/login\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T15:59:07+08:00 ] ::1 ::1 POST /think_web/index.php/login/index/proving.html
+[ info ] localhost/think_web/index.php/login/index/proving.html [运行时间：0.085516s][吞吐率：11.69req/s] [内存消耗：2,336.85kb] [文件加载：53]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'ada11',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005080s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.011134s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `user_name` = 'ada11' LIMIT 1 [ RunTime:0.001212s ]
+---------------------------------------------------------------
+[ 2017-11-01T15:59:53+08:00 ] ::1 ::1 POST /think_web/index.php/login/index/index.html
+[ info ] localhost/think_web/index.php/login/index/index.html [运行时间：0.243924s][吞吐率：4.10req/s] [内存消耗：2,429.03kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '32',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'pass_word' => '123456',
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010440s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006192s ]
+[ sql ] [ SQL ] SELECT * FROM `think_user` WHERE  `user_name` = 'admin'  AND `pass_word` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.000814s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `land`=18,`ip_next`='127.0.0.1',`login_time`=1509523193  WHERE  `id` = 1 [ RunTime:0.156215s ]
+---------------------------------------------------------------
+[ 2017-11-01T15:59:56+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.102569s][吞吐率：9.75req/s] [内存消耗：2,642.15kb] [文件加载：59]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011451s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.010552s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.010857s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2017-11-01T15:59:56+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.036335s][吞吐率：27.52req/s] [内存消耗：1,708.03kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:41:32+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.083462s][吞吐率：11.98req/s] [内存消耗：2,418.30kb] [文件加载：57]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509523197',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001369s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.013673s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005214s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000809s ]
+---------------------------------------------------------------
+[ 2017-11-01T16:41:32+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.051527s][吞吐率：19.41req/s] [内存消耗：1,708.03kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509523197',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:41:34+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.045421s][吞吐率：22.02req/s] [内存消耗：1,877.05kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525693',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:41:58+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.085028s][吞吐率：11.76req/s] [内存消耗：2,418.30kb] [文件加载：57]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/index.php/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525693',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010807s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_menu` [ RunTime:0.005034s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `think_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004901s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `think_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2017-11-01T16:41:58+08:00 ] ::1 ::1 GET /think_web/home/index/welcome.html
+[ info ] localhost/think_web/home/index/welcome.html [运行时间：0.051237s][吞吐率：19.52req/s] [内存消耗：1,708.34kb] [文件加载：51]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525693',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\index\welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:42:01+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.050662s][吞吐率：19.74req/s] [内存消耗：1,876.15kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:43:44+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.051544s][吞吐率：19.40req/s] [内存消耗：1,877.15kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T16:44:18+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.037296s][吞吐率：26.81req/s] [内存消耗：1,877.15kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T17:06:35+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.054418s][吞吐率：18.38req/s] [内存消耗：1,877.15kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T17:07:00+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.038344s][吞吐率：26.08req/s] [内存消耗：1,877.15kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T17:07:45+08:00 ] ::1 ::1 GET /think_web/home/editor
+[ info ] localhost/think_web/home/editor [运行时间：0.038214s][吞吐率：26.17req/s] [内存消耗：1,877.65kb] [文件加载：54]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ E:\xampp\htdocs\think_web\application\home\controller\Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/home\view\editor\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-01T17:07:57+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.213931s][吞吐率：4.67req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'wall',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001155s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006990s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='wall'  WHERE  `id` = 1 [ RunTime:0.162245s ]
+---------------------------------------------------------------
+[ 2017-11-01T17:08:08+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.202591s][吞吐率：4.94req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'pink',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010892s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005848s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='pink'  WHERE  `id` = 1 [ RunTime:0.143905s ]
+---------------------------------------------------------------
+[ 2017-11-01T17:08:12+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.200478s][吞吐率：4.99req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'green',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001031s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004968s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='green'  WHERE  `id` = 1 [ RunTime:0.152202s ]
+---------------------------------------------------------------
+[ 2017-11-01T17:08:15+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.192692s][吞吐率：5.19req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'blue',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001409s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.006613s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='blue'  WHERE  `id` = 1 [ RunTime:0.142607s ]
+---------------------------------------------------------------
+[ 2017-11-01T17:08:20+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.216291s][吞吐率：4.62req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'wall',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010741s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.005470s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='wall'  WHERE  `id` = 1 [ RunTime:0.151755s ]
+---------------------------------------------------------------
+[ 2017-11-01T17:08:23+08:00 ] ::1 ::1 POST /think_web/home/index/theme.html
+[ info ] localhost/think_web/home/index/theme.html [运行时间：0.207294s][吞吐率：4.82req/s] [内存消耗：2,392.05kb] [文件加载：56]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/think_web/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=i60tipp7rfhbl32chupp1vk2kp; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509525719',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'black',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001565s ] mysql:host=127.0.0.1;port=3306;dbname=tp5;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `think_user` [ RunTime:0.004600s ]
+[ sql ] [ SQL ] UPDATE `think_user`  SET `theme`='black'  WHERE  `id` = 1 [ RunTime:0.147740s ]

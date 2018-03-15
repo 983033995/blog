@@ -1,0 +1,108 @@
+{extend name="base@base/user_page" /}
+{block name="content"}
+
+<div id="ipad">
+    <div class="ipad-title"><h1>与admin的聊天</h1></div>
+
+    <span class="T"></span>
+    <span class="R"></span>
+    <span class="B"></span>
+    <span class="L"></span>
+    <span class="TR"></span>
+    <span class="BR"></span>
+    <span class="BL"></span>
+    <span class="LT"></span>
+
+    <div class="ipad-cont">
+        <div class="textArea">
+            <div class="dialog_box">
+                <span class="dialog_time">2018年1月9日  09:45:23</span>
+                <div class="other_side">
+                    <div class="head_img">
+                        <img src="http://www.zhangheteng.com/forum/Public/images/default_avatar_64_64.jpg" />
+                    </div>
+                    <div class="dialog_c">
+                        <div class="dialog_arrow"></div>
+                        <div class="dialog_W">你好！很高心认识你呀，我们可以交个朋友吗？</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_box">
+                <span class="dialog_time">2018年1月9日  09:45:58</span>
+                <div class="self_side">
+                    <div class="head_img">
+                        <img src="http://www.zhangheteng.com/forum/Uploads/Avatar/1/594cc100c3004_128_128.png" />
+                    </div>
+                    <div class="dialog_c">
+                        <div class="dialog_arrow"></div>
+                        <div class="dialog_W">nice to meet you too !</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_box">
+                <span class="dialog_time">2018年1月9日  09:45:23</span>
+                <div class="other_side">
+                    <div class="head_img">
+                        <img src="http://www.zhangheteng.com/forum/Public/images/default_avatar_64_64.jpg" />
+                    </div>
+                    <div class="dialog_c">
+                        <div class="dialog_arrow"></div>
+                        <div class="dialog_W">你好！很高心认识你呀，我们可以交个朋友吗？</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog_box">
+                <span class="dialog_time">2018年1月9日  09:45:58</span>
+                <div class="self_side">
+                    <div class="head_img">
+                        <img src="http://www.zhangheteng.com/forum/Uploads/Avatar/1/594cc100c3004_128_128.png" />
+                    </div>
+                    <div class="dialog_c">
+                        <div class="dialog_arrow"></div>
+                        <div class="dialog_W">nice to meet you too !</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ipad-bar"><i class="bar"></i></div>
+    <div class="chart_p">
+
+    </div>
+
+    <div class="dialog_send">
+        <div class="send_words">
+            <textArea id="dialog_text" placeholder=""></textArea>
+            <i id="chart_look" class="icon Hui-iconfont">&#xe68e;</i>
+            <div id="dialog_look" class="dialog_look">
+                <div class="look_top">
+                    <div class="look_title">常用表情</div>
+                    <div id="look_close" class="look_close"><i class="icon Hui-iconfont">&#xe6a6;</i></div>
+                </div>
+                <div class="look_icon">
+                    <div class='loader loader--circularSquare'></div>
+                </div>
+            </div>
+        </div>
+        <div class="send_bar" onclick="sendMessage()">发送</div>
+    </div>
+</div>
+
+{/block}
+
+{block name="js"}
+<script>
+    $(function () {
+        $('#ipad').ipad({
+            width: 500,
+            height: 400,
+            limitedWidth: 400,
+            limitedHeight: 300,
+            dragLimited: true
+        });
+
+        ipadScrollBar();
+    });
+
+</script>
+{/block}

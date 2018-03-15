@@ -1,0 +1,73 @@
+{extend name="base@base/page_base" /}
+{block name="content"}
+    <nav class="breadcrumb">
+        <i class="Hui-iconfont">&#xe67f;</i> 首页
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 首页管理
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 轮播图管理
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 编辑自动切换时间
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+            <i class="Hui-iconfont">&#xe68f;</i>
+        </a>
+    </nav>
+    <div class="page-container">
+        <form action="" method="" class="form form-horizontal" id="form-article-add">
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>选择自动切换时间：</label>
+                <div class="formControls col-xs-4 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="changeTime">
+                            <?php for($i=5; $i<=15;$i++){ ?>
+                                <option value="{$i*1000}" {eq name="changeTime" value="$i*1000"}selected{/eq}>{$i}s</option>
+                           <?php } ?>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <input type="hidden" value="{$changeTime}" id="old">
+            <div class="row cl">
+                <div class="col-xs-8 col-sm-3 col-xs-offset-4 col-sm-offset-2">
+                    <button  onClick="return article_save_submit();" class="btn btn-primary radius" type="button">提交</button>
+                    <button onClick="layer_close();" class="btn btn-default radius ml1r" type="button">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+{/block}
+
+{block name="js"}
+    <script>
+        function article_save_submit(){
+            var oldval = $("#old").val();
+            var newval = $(".select").val();
+            if(oldval == newval){
+                layer.msg("自动切换时间未发生变化");
+                return false;
+            }else {
+                var str = $("#form-article-add").serialize();
+                $.ajax({
+                    type: 'POST',
+                    url: '{:Url("changetime")}',
+                    data:str,
+                    dataType: 'json',
+                    success: function(data){
+                        if(data.status=='1'){
+                            layer.msg(data.msg);
+                            setTimeout(function(){
+                                parent.myDate('1');		//传值到父窗口
+                                layer_close();
+                            },3000);
+                        }
+                        if(data.status=='0'){
+                            layer.msg(data.msg);
+                        }
+                    },
+                    error:function(data) {
+                        if(data.status=='0'){
+                            layer.msg(data.msg);
+                        }
+                    },
+                });
+            }
+        }
+    </script>
+{/block}

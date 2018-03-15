@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#ipad {
+    /*overflow: hidden;*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /*margin-left: -251px;*/
+    /*margin-top: -201px;*/
+    width: 200px;
+    height: 300px;
+    border-radius: 3px;
+    background-color: #ececec;
+    /*background: -webkit-linear-gradient(top, #ffffed 0%, #fcf9a2 100%);
+    background: -moz-linear-gradient(top, #ffffed 0%, #fcf9a2 100%);
+    background: -o-linear-gradient(top, #ffffed 0%, #fcf9a2 100%);
+    background: -ms-linear-gradient(top, #ffffed 0%, #fcf9a2 100%);
+    background: linear-gradient(top, #ffffed 0%, #fcf9a2 100%);*/
+    border-width: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 3px 5px rgba(0,0,0,0.35);
+    z-index: 99999;
+}
+
+#ipad .ipad-title {
+    position: relative;
+    z-index: 6;
+    height: 34px;
+    line-height: 34px;
+    /*margin: 5px 5px 0 5px;*/
+    cursor: move;
+    text-align: center;
+    color: #333;
+}
+
+#ipad .ipad-title div.title_r {
+    display: block;
+    width: 75%;
+    height: 34px;
+    line-height: 34px;
+    /*border-left: 1px solid #ececec;*/
+    border-bottom: 1px solid #CCCCCC;
+    background-color: #ececec;
+    float: right;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    position: relative;
+}
+#ipad .ipad-title div.title_r #look_obj_img{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 70%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+}
+#ipad .ipad-title div.title_r #look_obj_img img{
+    width: 100%;
+    height:100%;
+}
+#ipad .ipad-title div.title_r .title_r_c{
+    width: 70%;
+    float: right;
+    text-indent: 1em;
+}
+#ipad .ipad-control {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#ipad > span {
+    position: absolute;
+    z-index: 30;
+}
+
+#ipad > span.T {
+    top: 0;
+    width: 100%;
+    height: 5px;
+    cursor: n-resize;
+}
+
+#ipad > span.R {
+    right: 0;
+    width: 5px;
+    height: 100%;
+    cursor: e-resize;
+}
+
+#ipad > span.B {
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    cursor: s-resize;
+}
+
+#ipad > span.L {
+    left: 0;
+    width: 5px;
+    height: 100%;
+    cursor: w-resize;
+}
+
+#ipad > span.TR {
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    cursor: ne-resize;
+}
+
+#ipad > span.BR {
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    cursor: se-resize;
+}
+
+#ipad > span.BL {
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    cursor: sw-resize;
+}
+
+#ipad > span.LT {
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    cursor: nw-resize;
+}
+
+#ipad .ipad-cont {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin-top: 2px;
+    background-color: #ffffff;
+}
+
+#ipad .ipad-cont .textArea {
+    /*	line-height: 30px;*/
+    padding-right: 12px;
+    /*font-size: 14px;*/
+    word-break: break-all;
+    width: 65%;
+    float: right;
+}
+
+#ipad .ipad-cont .textArea .dialog_box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 7px 0;
+    margin-top: 8px;
+}
+#ipad .ipad-cont .textArea .dialog_box .dialog_time{
+    display: table;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.2);
+    font-family: "宋体";
+    font-size: 9px !important;
+    margin: 0 auto;
+}
+#ipad .ipad-cont .textArea .dialog_box .other_side ,#ipad .ipad-cont .textArea .dialog_box .self_side{
+    width: 100%;
+    height: auto;
+    /*overflow: hidden;*/
+    margin-top: 5px;
+}
+#ipad .ipad-cont .textArea .dialog_box .head_img{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    float: left;
+    margin: 0 8px;
+    border-radius: 10px;
+    border: 1px solid #CCCCCC;
+}
+#ipad .ipad-cont .textArea .dialog_box .head_img img{
+    width: 100%;
+    height: 100%;
+}
+#ipad .ipad-cont .textArea .dialog_box .dialog_c{
+    max-width: 70%;
+    /*overflow: hidden;*/
+    float: left;
+    position: relative;
+
+}
+#ipad .ipad-cont .textArea .dialog_box .other_side .dialog_c .dialog_arrow{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    background-color: #F4F4F4;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+#ipad .ipad-cont .textArea .dialog_box .other_side .dialog_c .dialog_W{
+    padding: 7px;
+    overflow: hidden;
+    min-height: 24px;
+    line-height: 24px;
+    background-color: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-left: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+#ipad .ipad-cont .textArea .dialog_box .dialog_c .dialog_W img{
+    display: inline !important;
+}
+#ipad .ipad-cont .textArea .dialog_box .self_side .head_img ,#ipad .ipad-cont .textArea .dialog_box .self_side .dialog_c{
+    float: right !important;
+}
+#ipad .ipad-cont .textArea .dialog_box .self_side .dialog_c .dialog_arrow{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    background-color: #4e9be0;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+#ipad .ipad-cont .textArea .dialog_box .self_side .dialog_c .dialog_W{
+    padding: 7px;
+    /*overflow: hidden;*/
+    min-height: 24px;
+    line-height: 24px;
+    background-color: #4e9be0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-right: 8px;
+    color: #FFFFFF;
+    box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+/* scrollBar */
+#ipad .ipad-bar {
+    position: absolute;
+    z-index: 999;
+    right: 4px;
+    top: 40px;
+    width: 8px;
+    height: 240px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+}
+
+#ipad .ipad-bar .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: #737373;
+    cursor: pointer;
+}
+
+.chart_p{
+    width: 30%;
+    height: 100%;
+    float: left;
+    background-color: #ececec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #CCCCCC;
+    z-index: 5;
+}
+.chart_p .look_left_row{
+    width: 100%;
+    height:50px;
+    overflow: hidden;
+    border-bottom: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+.chart_p .look_left_row:hover{
+    background-color: #b3d4fc;
+}
+.chart_p .look_left_current{
+    background-color: #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.chart_p .look_left_row .look_left_headimg{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    float: left;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    overflow: hidden;
+}
+.chart_p .look_left_row .look_left_headimg img{
+    width: 100%;
+    height: 100%;
+}
+.chart_p .look_left_row .look_left_chartobj{
+    width: 65%;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size: 14px;
+    color: #666;
+}
+.dialog_send{
+    width: 70%;
+    height: 40px;
+    border-top: 1px solid #CCCCCC;
+    position: relative;
+    z-index: 5;
+    padding: 8px 0;
+    float: right;
+}
+.dialog_send .send_words{
+    width: 70%;
+    height: 42px;
+    margin: 0 0 0 5%;
+    float: left;
+    position: relative;
+}
+.dialog_send .send_words textarea{
+    width: 85%;
+    height: 40px;
+    resize: none;
+}
+.dialog_send .send_words i{
+    cursor: pointer;
+    width: 10%;
+}
+.send_bar{
+    height: 30px;
+    padding: 0 10px;
+    width: 50px !important;
+    background-color: #3a7dac;
+    border: 1px solid #3a7dac;
+    float: left;
+    border-radius: 3px;
+    line-height: 30px;
+    margin-top: 5px;
+    color: #FFFFFF;
+    font-size: 12px;
+    cursor: pointer;
+}
+.dialog_send .dialog_look{
+    width: 298px;
+    height: 298px;
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background-color: #ffffff;
+    display: none;
+}
+.dialog_send .dialog_look .look_top{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.dialog_send .dialog_look .look_top .look_title{
+    width: 250px;
+    height:30px;
+    float: left;
+    margin: 0 10px;
+}
+.dialog_send .dialog_look .look_top .look_close{
+    width: 25px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+.dialog_send .dialog_look .look_icon{
+    width: 90%;
+    padding: 0 5%;
+    height: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.dialog_send .dialog_look .look_icon img{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 3px;
+    cursor: pointer;
+}
+/*loading动画*/
+.loader {
+    margin: 4em auto;
+}
+.loader--circularSquare {
+    width: 0;
+    height: 0;
+    box-shadow: -0.625em -0.625em 0 0.625em #9b59b6, 0.625em -0.625em 0 0.625em #9b59b6, -0.625em 0.625em 0 0.625em #9b59b6, 0.625em 0.625em 0 0.625em #9b59b6;
+    animation: circSquare 1.5s ease-in-out infinite;
+}
+@keyframes circSquare {
+    50% {
+        width: 1.25em;
+        height: 1.25em;
+        border-radius: 50%;
+        transform: rotate(0.5turn);
+        box-shadow: -2.5em 0 0 #2ecc71, 2.5em 0 0 #e74c3c, -2.5em 0 0 #3498db, 2.5em 0 0 #f1c40f;
+    }
+    80%, 100% {
+        transform: rotate(1turn);
+    }
+}
+
+.chart_animate{
+    animation: bounceInDown 0.8s linear;
+    -webkit-animation: bounceInDown 0.8s linear;
+    -moz-animation: bounceInDown 0.8s linear;
+    -ms-animation: bounceInDown 0.8s linear;
+}
+.chartout{
+    animation: zoomOut 1.5s linear;
+    -webkit-animation: zoomOut 1.5s linear;
+    -moz-animation: zoomOut 1.5s linear;
+    -ms-animation: zoomOut 1.5s linear;
+}
+.ipad_close,.ipad_minimize{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 9;
+}
+.ipad_close i,.ipad_minimize i{
+    font-size: 17px;
+    line-height: 30px;
+    color: #555555;
+}
+.ipad_close{
+    right: 15px;
+}
+.ipad_minimize{
+    right: 45px;
+}
+.min_tip_box{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 3px;
+    right: 3px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 2px 2px 0px rgba(0,0,0,0.3);
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.min_tip_box > i{
+    font-size: 24px;
+    color: #333333;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+}
+.chart_circular{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    font-size: 10px;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 12px;
+    color: #ffffff;
+    animation: flash 3s ease-in-out infinite;
+    -webkit-animation: flash 3s ease-in-out infinite;
+    -moz-animation: flash 3s ease-in-out infinite;
+    -ms-animation: flash 3s ease-in-out infinite;
+}
+

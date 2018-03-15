@@ -1,0 +1,1584 @@
+---------------------------------------------------------------
+[ 2017-11-03T15:47:09+08:00 ] ::1 ::1 GET /think_web/
+[ info ] localhost/think_web/ [运行时间：0.076508s][吞吐率：13.07req/s] [内存消耗：1,627.17kb] [文件加载：44]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ E:\xampp\htdocs\think_web\application\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T15:47:09+08:00 ] ::1 ::1 GET /think_web/index.php/login.html
+[ info ] localhost/think_web/index.php/login.html [运行时间：0.044549s][吞吐率：22.45req/s] [内存消耗：1,800.18kb] [文件加载：52]
+[ info ] [ LANG ] E:\xampp\htdocs\think_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_080836300300be57b7f34f4b3e97d911=1509334101,1509415424,1509519082; PHPSESSID=av7shr9226v9opp101c7js1bil',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ E:\xampp\htdocs\think_web\application\login\controller\Index.php ]
+[ info ] [ VIEW ] E:\xampp\htdocs\think_web/application/login\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T17:54:36+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.067928s][吞吐率：14.72req/s] [内存消耗：2,071.27kb] [文件加载：46]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [64]Can't use function return value in write context[/data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php:13]
+---------------------------------------------------------------
+[ 2017-11-03T17:57:52+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.034304s][吞吐率：29.15req/s] [内存消耗：2,305.80kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T17:57:52+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.047133s][吞吐率：21.22req/s] [内存消耗：2,791.12kb] [文件加载：54]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T17:58:17+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.035029s][吞吐率：28.55req/s] [内存消耗：2,306.13kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T17:58:17+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.042496s][吞吐率：23.53req/s] [内存消耗：2,566.91kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T17:58:43+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/index.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/index.html [运行时间：0.243655s][吞吐率：4.10req/s] [内存消耗：3,440.84kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'pass_word' => '123456',
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004394s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002191s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'admin'  AND `pass_word` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001562s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `land`=19,`ip_next`='121.42.77.167',`login_time`=1509703123  WHERE  `id` = 1 [ RunTime:0.186464s ]
+---------------------------------------------------------------
+[ 2017-11-03T17:58:45+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.075797s][吞吐率：13.19req/s] [内存消耗：3,684.05kb] [文件加载：59]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003851s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_menu` [ RunTime:0.006013s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.001788s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `summary_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001297s ]
+---------------------------------------------------------------
+[ 2017-11-03T17:58:46+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/home/index/welcome.html
+[ info ] www.zhangheteng.com/think_web/home/index/welcome.html [运行时间：0.046921s][吞吐率：21.31req/s] [内存消耗：2,468.64kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]disk_free_space() has been disabled for security reasons[/data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php:91]
+---------------------------------------------------------------
+[ 2017-11-03T18:01:34+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.068579s][吞吐率：14.58req/s] [内存消耗：3,467.24kb] [文件加载：57]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004475s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_menu` [ RunTime:0.002232s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001785s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002013s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `summary_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001109s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:01:35+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/home/index/welcome.html
+[ info ] www.zhangheteng.com/think_web/home/index/welcome.html [运行时间：0.053284s][吞吐率：18.77req/s] [内存消耗：2,688.91kb] [文件加载：57]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: ser_free[/data/home/qxu1141810136/htdocs/think_web/runtime/temp/a9855cffea53b987a646cc5f14329bd7.php:86]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:01+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.066824s][吞吐率：14.96req/s] [内存消耗：3,467.24kb] [文件加载：57]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003980s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_menu` [ RunTime:0.002062s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `summary_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001145s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:01+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/home/index/welcome.html
+[ info ] www.zhangheteng.com/think_web/home/index/welcome.html [运行时间：0.048666s][吞吐率：20.55req/s] [内存消耗：2,494.52kb] [文件加载：55]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: ser_free[/data/home/qxu1141810136/htdocs/think_web/runtime/temp/a9855cffea53b987a646cc5f14329bd7.php:86]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:09+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.068992s][吞吐率：14.49req/s] [内存消耗：3,467.24kb] [文件加载：57]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/index.html [ array (
+  0 => 'data_menu',
+  1 => 'theme',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004079s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_menu` [ RunTime:0.002077s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `pid` = 0  AND `power` = 0 [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_menu` WHERE  `type` = 1  AND `power` = 0 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SELECT `theme`,`set_time` FROM `summary_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001148s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:09+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/home/index/welcome.html
+[ info ] www.zhangheteng.com/think_web/home/index/welcome.html [运行时间：0.045077s][吞吐率：22.18req/s] [内存消耗：2,637.79kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->welcome[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/index/welcome.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:02:14+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/home/editor
+[ info ] www.zhangheteng.com/think_web/home/editor [运行时间：0.046341s][吞吐率：21.58req/s] [内存消耗：2,690.14kb] [文件加载：54]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Editor->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Editor.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/home/view/editor/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:02:22+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/home/index/theme.html
+[ info ] www.zhangheteng.com/think_web/home/index/theme.html [运行时间：0.065212s][吞吐率：15.33req/s] [内存消耗：3,397.20kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '10',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'blue',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004037s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002133s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `theme`='blue'  WHERE  `id` = 1 [ RunTime:0.009770s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:26+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/home/index/theme.html
+[ info ] www.zhangheteng.com/think_web/home/index/theme.html [运行时间：0.066707s][吞吐率：14.99req/s] [内存消耗：3,397.21kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '11',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'green',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004222s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.006372s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `theme`='green'  WHERE  `id` = 1 [ RunTime:0.008108s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:30+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/home/index/theme.html
+[ info ] www.zhangheteng.com/think_web/home/index/theme.html [运行时间：0.064218s][吞吐率：15.57req/s] [内存消耗：3,397.20kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '10',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'wall',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003987s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.001985s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `theme`='wall'  WHERE  `id` = 1 [ RunTime:0.010667s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:33+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/home/index/theme.html
+[ info ] www.zhangheteng.com/think_web/home/index/theme.html [运行时间：0.346154s][吞吐率：2.89req/s] [内存消耗：3,397.21kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'theme',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '11',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'theme' => 'black',
+)
+[ info ] [ RUN ] app\home\controller\Index->theme[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004074s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002179s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `theme`='black'  WHERE  `id` = 1 [ RunTime:0.290713s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:02:54+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.055948s][吞吐率：17.87req/s] [内存消耗：3,323.79kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'script',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004181s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002171s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'script' LIMIT 1 [ RunTime:0.001504s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:03:15+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.055088s][吞吐率：18.15req/s] [内存消耗：3,323.74kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '30',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'data' => '983033995@qq.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004176s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002262s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '983033995@qq.com' LIMIT 1 [ RunTime:0.001382s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:05:00+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/add.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/add.html [运行时间：0.703061s][吞吐率：1.42req/s] [内存消耗：3,943.91kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '67',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'script',
+  'pass_word' => 'abcdef983033995',
+  'email' => '983033995@qq.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->add[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004441s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002219s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '983033995@qq.com'  AND `stat` = 0 LIMIT 1 [ RunTime:0.001376s ]
+[ sql ] [ SQL ] INSERT INTO `summary_user` (`user_name` , `pass_word` , `pid` , `pid_name` , `set_time` , `ip_next` , `email` , `stat`) VALUES ('script' , '4d83b0a1af03b0442c7159122b184ae5' , 1 , '新兵蛋子' , 1509703499 , '116.54.93.251' , '983033995@qq.com' , 0) [ RunTime:0.008744s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `email_key`='abbf853ee974d48404c57815772a8513',`datatime`=1509703499  WHERE  `email` = '983033995@qq.com' [ RunTime:0.006030s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:05:03+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.033493s][吞吐率：29.86req/s] [内存消耗：2,305.74kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:05:03+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.042932s][吞吐率：23.29req/s] [内存消耗：2,567.42kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:09:41+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.086955s][吞吐率：11.50req/s] [内存消耗：3,323.74kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'script',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034386s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002219s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'script' LIMIT 1 [ RunTime:0.001651s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:15:04+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.053581s][吞吐率：18.66req/s] [内存消耗：3,323.79kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '18',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'script',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004061s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002148s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'script' LIMIT 1 [ RunTime:0.001457s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:15:31+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.055446s][吞吐率：18.04req/s] [内存消耗：3,323.74kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '30',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'data' => '983033995@qq.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003921s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002120s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '983033995@qq.com' LIMIT 1 [ RunTime:0.001470s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:15:34+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.053565s][吞吐率：18.67req/s] [内存消耗：3,323.74kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '30',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'data' => '983033995@qq.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003833s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002208s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '983033995@qq.com' LIMIT 1 [ RunTime:0.001394s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:15:35+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/add.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/add.html [运行时间：0.696696s][吞吐率：1.44req/s] [内存消耗：3,943.91kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '67',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'script',
+  'pass_word' => 'abcdef983033995',
+  'email' => '983033995@qq.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->add[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003989s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002108s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '983033995@qq.com'  AND `stat` = 0 LIMIT 1 [ RunTime:0.001455s ]
+[ sql ] [ SQL ] INSERT INTO `summary_user` (`user_name` , `pass_word` , `pid` , `pid_name` , `set_time` , `ip_next` , `email` , `stat`) VALUES ('script' , '4d83b0a1af03b0442c7159122b184ae5' , 1 , '新兵蛋子' , 1509704134 , '116.54.93.251' , '983033995@qq.com' , 0) [ RunTime:0.009174s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `email_key`='cd30f1eaa3ca88c928c922640edae4f7',`datatime`=1509704134  WHERE  `email` = '983033995@qq.com' [ RunTime:0.005516s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:15:37+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.034199s][吞吐率：29.24req/s] [内存消耗：2,305.74kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:15:38+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.044280s][吞吐率：22.58req/s] [内存消耗：2,567.42kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:17:56+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.054523s][吞吐率：18.34req/s] [内存消耗：3,323.71kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '17',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; __guid=169591975.1180829342552929300.1504259456918.9207; UM_distinctid=15e7ba0a3e26a-0db188147-3b664008-1fa400-15e7ba0a3e4255; CNZZDATA5791305=cnzz_eid%3D1948650766-1505308708-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1505308708; bdshare_firstime=1505312681423; PHPSESSID=9rqoomk4q23eppcgcubk0un6g6; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'admin',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004167s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002200s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'admin' LIMIT 1 [ RunTime:0.001476s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:18:14+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/home/index/exit_login.html
+[ info ] www.zhangheteng.com/think_web/home/index/exit_login.html [运行时间：0.033771s][吞吐率：29.61req/s] [内存消耗：2,353.38kb] [文件加载：47]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'exit_login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->exit_login[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:18:16+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.035001s][吞吐率：28.57req/s] [内存消耗：2,305.22kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:18:16+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.046042s][吞吐率：21.72req/s] [内存消耗：2,567.98kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:18:34+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.053342s][吞吐率：18.75req/s] [内存消耗：3,324.30kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '15',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+  'data' => 'zht',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004014s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002102s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'zht' LIMIT 1 [ RunTime:0.001428s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:21:13+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/proving.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/proving.html [运行时间：0.055661s][吞吐率：17.97req/s] [内存消耗：3,324.21kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'proving',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+  'data' => '10zhangheteng@sian.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->proving[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004032s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.004734s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '10zhangheteng@sian.com' LIMIT 1 [ RunTime:0.001618s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:21:15+08:00 ] 121.42.77.167 116.54.93.251 POST /think_web/index.php/login/index/add.html
+[ info ] www.zhangheteng.com/think_web/index.php/login/index/add.html [运行时间：0.751914s][吞吐率：1.33req/s] [内存消耗：3,944.16kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '70',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'zht',
+  'pass_word' => 'abcdef983033995',
+  'email' => '10zhangheteng@sian.com',
+)
+[ info ] [ RUN ] app\login\controller\Index->add[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004523s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.004076s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `email` = '10zhangheteng@sian.com'  AND `stat` = 0 LIMIT 1 [ RunTime:0.001605s ]
+[ sql ] [ SQL ] INSERT INTO `summary_user` (`user_name` , `pass_word` , `pid` , `pid_name` , `set_time` , `ip_next` , `email` , `stat`) VALUES ('zht' , '4d83b0a1af03b0442c7159122b184ae5' , 1 , '新兵蛋子' , 1509704475 , '116.54.93.251' , '10zhangheteng@sian.com' , 0) [ RunTime:0.017785s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `email_key`='75ec4bae224868ab7abba060b0ef4ee8',`datatime`=1509704475  WHERE  `email` = '10zhangheteng@sian.com' [ RunTime:0.029103s ]
+---------------------------------------------------------------
+[ 2017-11-03T18:21:18+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/
+[ info ] www.zhangheteng.com/think_web/ [运行时间：0.032998s][吞吐率：30.31req/s] [内存消耗：2,305.23kb] [文件加载：44]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\home\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/home/controller/Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-11-03T18:21:18+08:00 ] 121.42.77.167 116.54.93.251 GET /think_web/index.php/login.html
+[ info ] www.zhangheteng.com/think_web/index.php/login.html [运行时间：0.042633s][吞吐率：23.46req/s] [内存消耗：2,567.87kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/think_web/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15ebbf818f3575-0a7ef7cf74138c-1781c36-144000-15ebbf818f448a; CNZZDATA5791305=cnzz_eid%3D1947250497-1506391295-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1506391295; bdshare_firstime=1506392181003; PHPSESSID=06nkhr23f82q55nu86ncka0l31; a7273_times=4; Hm_lvt_080836300300be57b7f34f4b3e97d911=1509703330; Hm_lpvt_080836300300be57b7f34f4b3e97d911=1509703330',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/think_web/index.php/login.html',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/think_web/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/think_web/application/login/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,175 @@
+{extend name="base@base/index_page_home" /}
+{block name="content"}
+
+        <!--头部logo-->
+        <div class="top_log"></div>
+        <!--头部logo-->
+
+        <!--头部导航-->
+        <div class="top_nav">
+            <div class="nav_box">
+                <div>
+                    <a href="">首页</a>
+                </div>
+                <div>
+                    <a href="">技能分享</a>
+                </div>
+                <div>
+                    <a href="">生活记闻</a>
+                </div>
+                <div>
+                    <a href="">学习资料</a>
+                </div>
+            </div>
+            <div id="search_box" class="search_box border_animate1" data-time="1000">
+                <div class="border-left color"></div>
+                <div class="border-bottom color"></div>
+                <div class="border-top color"></div>
+                <div class="border-right color"></div>
+                <input id="search_input" type="text" value="" placeholder="我想看" autocomplete="off">
+                <div class="search_btn">
+                    <i class="icon Hui-iconfont">&#xe665;</i>
+                </div>
+            </div>
+        </div>
+        <!--头部导航-->
+
+        <!--轮播图-->
+        <div class="focus_box" id="focus_box" data-changetime="{$changeTime}">
+            <div class="focus">
+                <?php foreach( $banner as $v){ ?>
+                <div class="focus_content">
+                    
+                    <div class="w_content">
+                        {eq name="$v['set_type']" value="0"}
+                        <div class="focus_introduce" data-wow-delay="{$v['new_york_dealy']}" data-wow-duration="{$v['new_york_duration']}" data-animate="{$v['new_york_animate']}">
+                            {$v['new_york']}
+                        </div>
+                        <div class="focus_supply" data-wow-delay="{$v['present_img_dealy']}" data-wow-duration="{$v['present_img_duration']}" data-animate="{$v['present_img_animate']}">
+                            <img src="{$v['present_img']}" />
+                        </div>
+                        {else /}
+                        <div class="focus_supply" data-wow-delay="{$v['present_img_dealy']}" data-wow-duration="{$v['present_img_duration']}" data-animate="{$v['present_img_animate']}">
+                            <img src="{$v['present_img']}" />
+                        </div>
+                        <div class="focus_introduce" data-wow-delay="{$v['new_york_dealy']}" data-wow-duration="{$v['new_york_duration']}" data-animate="{$v['new_york_animate']}">
+                            {$v['new_york']}
+                        </div>
+                        {/eq}
+                    </div>
+                    <img src="{$v['bg_img']}" />
+                </div>
+                <?php } ?>
+            </div>
+            <div class="focus_nav">
+                <span></span>
+                <div class="bg_shade"></div>
+            </div>
+            <div class="arrow" id="prev"><</div>
+            <div class="arrow" id="next">></div>
+        </div>
+        <!--轮播图-->
+
+        <!--个人推荐-->
+        <?php if(!empty($propose)){ ?>
+            <div class="my_propose" id="propose">
+                <div class="propose_title">
+                    <h1>个人推荐</h1>
+                    <h2>精选文章推荐</h2>
+                </div>
+
+                <div class="propose_content ">
+                    <?php foreach( $propose as $v){ ?>
+                    <div class="propose_drawer border_animate">
+                        <div class="border-left"></div>
+                        <div class="border-bottom"></div>
+                        <div class="border-top"></div>
+                        <div class="border-right"></div>
+                        <a href="/blog/home/editor/article_show/sign/{$v['id']}">
+                            <div class="drawer_title">
+                                <h2>{$v['title']}</h2>
+                                <div class="p_details">
+                                    <span><img style="float: left; width: 20px; height: 20px; border-radius: 10px; -webkit-border-radius: 10px; margin-top: 5px;" src="{$v['head_portrait']}">{$v['user_name']}</span>
+                                    <span><i class="icon Hui-iconfont">&#xe681;</i>{$v['category']}</span>
+                                    <span>{:time2Units($v['set_time'])}前</span>
+                                </div>
+                            </div>
+                            <div class="drawer_introduce">{$v['wrap']}</div>
+                        </a>
+                    </div>
+                    <?php } ?>
+                </div>
+
+            </div>
+        <?php } ?>
+        <!--个人推荐-->
+
+        <!--最新发布-->
+            <div class="latest_release">
+                <div class="release_title">最新发布</div>
+                <div class="release_content ">
+                    <?php foreach( $new as $v){ ?>
+                    <div class="propose_drawer border_animate1" data-time="800">
+                        <div class="border-left"></div>
+                        <div class="border-bottom"></div>
+                        <div class="border-top"></div>
+                        <div class="border-right"></div>
+                        <a href="/blog/home/editor/article_show/sign/{$v['id']}">
+                            <div class="drawer_title">
+                                <h2>{$v['title']}</h2>
+                                <div class="p_details">
+                                    <span><img style="float: left; width: 20px; height: 20px; border-radius: 10px; -webkit-border-radius: 10px; margin-top: 5px;" src="{$v['head_portrait']}">{$v['user_name']}</span>
+                                    <span><i class="icon Hui-iconfont">&#xe681;</i>{$v['category']}</span>
+                                    <span>{:time2Units($v['set_time'])}前</span>
+                                </div>
+                            </div>
+                            <div class="drawer_introduce">{$v['wrap']}</div>
+                        </a>
+                    </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+        <!--最新发布-->
+
+        <!--热点博文-->
+        <div class="my_propose">
+            <div class="propose_title">
+                <h1>热点博文</h1>
+                <h2>来看看其他人都在关注什么</h2>
+            </div>
+            <div class="propose_content ">
+                <?php foreach( $hot as $v){ ?>
+                <div class="propose_drawer border_animate">
+                    <div class="border-left"></div>
+                    <div class="border-bottom"></div>
+                    <div class="border-top"></div>
+                    <div class="border-right"></div>
+                    <a href="/blog/home/editor/article_show/sign/{$v['id']}">
+                        <div class="drawer_title">
+                            <h2>{$v['title']}</h2>
+                            <div class="p_details">
+                                <span><img style="float: left; width: 20px; height: 20px; border-radius: 10px; -webkit-border-radius: 10px; margin-top: 5px;" src="{$v['head_portrait']}">{$v['user_name']}</span>
+                                <span><i class="icon Hui-iconfont">&#xe681;</i>{$v['category']}</span>
+                                <span><i class="Hui-iconfont">&#xe725;</i><?php echo (int)$v['page_view']; ?>次</span>
+                            </div>
+                        </div>
+                        <div class="drawer_introduce">{$v['wrap']}</div>
+                    </a>
+                </div>
+                <?php } ?>
+
+            </div>
+        </div>
+        <!--热点博文-->
+{/block}
+
+{block name="js"}
+<script>
+    $("#search_input").searchAssociate({
+        dataName: "title",
+        link:"http://www.zhangheteng.com/blog/index/index/search",
+        elementName:"#search_box"
+    });
+</script>
+{/block}

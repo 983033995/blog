@@ -1,0 +1,34 @@
+---------------------------------------------------------------
+[ 2017-12-20T10:27:00+08:00 ] 121.42.77.167 69.58.178.58 GET /blog/home/editor/article_list/sign/20
+[ info ] www.zhangheteng.com/blog/home/editor/article_list/sign/20 [运行时间：0.106546s][吞吐率：9.39req/s] [内存消耗：3,440.18kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => 'article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,text/plain,*/*',
+  'accept-language' => 'en-us,en;q=0.8',
+  'from' => 'wc@verisignlabs.com',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; ips-agent)',
+)
+[ info ] [ PARAM ] array (
+  'sign' => '20',
+)
+[ info ] [ RUN ] app\home\controller\Editor->article_list[ /data/home/qxu1141810136/htdocs/blog/application/home/controller/Editor.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/home/view/editor/article_list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004087s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002192s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.002562s ]
+[ sql ] [ SQL ] UPDATE `summary_editor`  SET `page_view`=221  WHERE  `id` = 20 [ RunTime:0.011367s ]

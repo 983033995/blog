@@ -1,0 +1,50 @@
+---------------------------------------------------------------
+[ 2018-03-11T09:53:26+08:00 ] 121.42.77.167 91.210.147.77 GET /blog/
+[ info ] zhangheteng.com/blog/ [运行时间：0.093689s][吞吐率：10.67req/s] [内存消耗：3,346.46kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/gif, image/x-xbitmap, image/jpeg,image/pjpeg, application/x-shockwave-flash,application/vnd.ms-excel,application/vnd.ms-powerpoint,application/msword',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-language' => 'ru',
+  'connection' => 'keep-alive',
+  'host' => 'zhangheteng.com',
+  'referer' => 'http://zhangheteng.com/blog/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033673s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002363s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001519s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001818s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.001918s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001351s ]

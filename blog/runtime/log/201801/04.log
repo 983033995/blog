@@ -1,0 +1,562 @@
+---------------------------------------------------------------
+[ 2018-01-04T10:13:45+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.087026s][吞吐率：11.49req/s] [内存消耗：3,327.63kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; a7273_times=3',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004596s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002265s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001505s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001744s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` WHERE  `p`.`type` = 1 [ RunTime:0.001637s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap` FROM `summary_editor` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001383s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:13:51+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/home/editor/article_list/sign/20
+[ info ] www.zhangheteng.com/blog/home/editor/article_list/sign/20 [运行时间：0.064167s][吞吐率：15.58req/s] [内存消耗：3,444.91kb] [文件加载：56]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => 'article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=1; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201515033827555%7D; __51cke__=; __51laig__=1',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'sign' => '20',
+)
+[ info ] [ RUN ] app\home\controller\Editor->article_list[ /data/home/qxu1141810136/htdocs/blog/application/home/controller/Editor.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/home/view/editor/article_list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005289s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002179s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `id` = 20 LIMIT 1 [ RunTime:0.002715s ]
+[ sql ] [ SQL ] UPDATE `summary_editor`  SET `page_view`=226  WHERE  `id` = 20 [ RunTime:0.006380s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:13:54+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.065957s][吞吐率：15.16req/s] [内存消耗：3,328.08kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=1; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201515033827555%7D; __51cke__=; __51laig__=1',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004162s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002220s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001760s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` WHERE  `p`.`type` = 1 [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap` FROM `summary_editor` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001431s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:14:24+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/login/
+[ info ] www.zhangheteng.com/blog/login/ [运行时间：0.091013s][吞吐率：10.99req/s] [内存消耗：2,471.47kb] [文件加载：47]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=2; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201515033835612%7D; __51cke__=; __51laig__=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/login/view/index/index.html [ array (
+  0 => 'href',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-04T10:14:29+08:00 ] 121.42.77.167 116.54.93.251 POST /blog/login/index/index.html
+[ info ] www.zhangheteng.com/blog/login/index/index.html [运行时间：0.082237s][吞吐率：12.16req/s] [内存消耗：3,474.12kb] [文件加载：55]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '32',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=2; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201515033835612%7D; __51cke__=; __51laig__=2',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/login/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'user_name' => 'admin',
+  'pass_word' => '123456',
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/login/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004196s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002695s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `user_name` = 'admin'  AND `pass_word` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.001934s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001795s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `user_name` = 'admin' [ RunTime:0.011678s ]
+[ sql ] [ SQL ] UPDATE `summary_user`  SET `land`=161,`ip_next`='116.54.93.251',`login_time`=1515032069,`experience`=7  WHERE  `id` = 1 [ RunTime:0.008999s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:14:32+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.066936s][吞吐率：14.94req/s] [内存消耗：3,331.33kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=2; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201515033835612%7D; __51cke__=; __51laig__=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/login/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004761s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.006833s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001739s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` WHERE  `p`.`type` = 1 [ RunTime:0.001284s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap` FROM `summary_editor` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001306s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:14:47+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/index/user/index/id/1.html
+[ info ] www.zhangheteng.com/blog/index/user/index/id/1.html [运行时间：0.096670s][吞吐率：10.34req/s] [内存消耗：3,398.10kb] [文件加载：54]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=3; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%203%2C%20%22expires%22%3A%201515033872891%7D; __51cke__=; __51laig__=3',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\index\controller\User->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/user/index.html [ array (
+  0 => 'list',
+  1 => 'follow',
+  2 => 'con',
+  3 => 'con_num',
+  4 => 'fans',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003901s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_user` [ RunTime:0.002282s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_follow` [ RunTime:0.001723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `summary_follow` WHERE  `who_floow` = 1 LIMIT 1 [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `summary_follow` WHERE  `floow_who` = 1 LIMIT 1 [ RunTime:0.001239s ]
+---------------------------------------------------------------
+[ 2018-01-04T10:14:50+08:00 ] 121.42.77.167 116.54.93.251 POST /blog/index/user/self_article
+[ info ] www.zhangheteng.com/blog/index/user/self_article [运行时间：0.059030s][吞吐率：16.94req/s] [内存消耗：3,285.95kb] [文件加载：52]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'self_article',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-length' => '14',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => '__guid=169591975.3854774526227394000.1511487073031.8398; UM_distinctid=1603541fd7c105b-08e734d199ec2e-5d4e211f-1fa400-1603541fd801392; CNZZDATA5791305=cnzz_eid%3D1100297339-1512716862-http%253A%252F%252Fwww.zhangheteng.com%252F%26ntime%3D1512716862; bdshare_firstime=1512722013004; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1512722015; Hm_lvt_080836300300be57b7f34f4b3e97d911=1512963789,1513043300,1513127039,1513835675; PHPSESSID=04u39pgcm3urf2rvdpsghsnah2; a7273_pages=4; a7273_times=4; __tins__19217273=%7B%22sid%22%3A%201515032027555%2C%20%22vd%22%3A%204%2C%20%22expires%22%3A%201515033888657%7D; __51cke__=; __51laig__=4',
+  'host' => 'www.zhangheteng.com',
+  'origin' => 'http://www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/index/user/index/id/1.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+)
+[ info ] [ RUN ] app\index\controller\User->self_article[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005117s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `summary_editor` WHERE  `user_name` = 'admin'  AND `status` = 1 LIMIT 1 [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `user_name` = 'admin'  AND `status` = 1 ORDER BY set_time desc LIMIT 20 [ RunTime:0.001396s ]
+---------------------------------------------------------------
+[ 2018-01-04T16:22:31+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.079732s][吞吐率：12.54req/s] [内存消耗：3,326.91kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_080836300300be57b7f34f4b3e97d911=1513133087,1513677644; a7273_times=2',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023199s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001795s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` WHERE  `p`.`type` = 1 [ RunTime:0.001663s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap` FROM `summary_editor` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001395s ]
+---------------------------------------------------------------
+[ 2018-01-04T16:22:34+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/login/
+[ info ] www.zhangheteng.com/blog/login/ [运行时间：0.034396s][吞吐率：29.07req/s] [内存消耗：2,470.45kb] [文件加载：47]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_080836300300be57b7f34f4b3e97d911=1513133087,1513677644; PHPSESSID=vqi8dg2v8e9jseqgaaq1uslmt2; a7273_pages=1; a7273_times=3; __tins__19217273=%7B%22sid%22%3A%201515054153141%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201515055953141%7D; __51cke__=; __51laig__=1',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/login/view/index/index.html [ array (
+  0 => 'href',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-04T16:22:43+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.061570s][吞吐率：16.24req/s] [内存消耗：3,327.33kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_080836300300be57b7f34f4b3e97d911=1513133087,1513677644; PHPSESSID=vqi8dg2v8e9jseqgaaq1uslmt2; a7273_pages=1; a7273_times=3; __tins__19217273=%7B%22sid%22%3A%201515054153141%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201515055953141%7D; __51cke__=; __51laig__=1',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003978s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002210s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001679s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` WHERE  `p`.`type` = 1 [ RunTime:0.001279s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap` FROM `summary_editor` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`set_time`,`title`,`category`,`wrap`,`page_view` FROM `summary_editor` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001291s ]
+---------------------------------------------------------------
+[ 2018-01-04T16:22:45+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/login/
+[ info ] www.zhangheteng.com/blog/login/ [运行时间：0.036752s][吞吐率：27.21req/s] [内存消耗：2,470.45kb] [文件加载：47]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_080836300300be57b7f34f4b3e97d911=1513133087,1513677644; PHPSESSID=vqi8dg2v8e9jseqgaaq1uslmt2; a7273_pages=2; a7273_times=3; __tins__19217273=%7B%22sid%22%3A%201515054153141%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201515055965211%7D; __51cke__=; __51laig__=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/login/controller/Index.php ]
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/login/view/index/index.html [ array (
+  0 => 'href',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-04T16:22:47+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/captcha.html
+[ info ] www.zhangheteng.com/blog/captcha.html [运行时间：0.053894s][吞吐率：18.55req/s] [内存消耗：1,980.59kb] [文件加载：39]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_080836300300be57b7f34f4b3e97d911=1513133087,1513677644; PHPSESSID=vqi8dg2v8e9jseqgaaq1uslmt2; a7273_pages=2; a7273_times=3; __tins__19217273=%7B%22sid%22%3A%201515054153141%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201515055965211%7D; __51cke__=; __51laig__=2',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.zhangheteng.com/blog/login/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /data/home/qxu1141810136/htdocs/blog/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File

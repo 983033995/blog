@@ -1,0 +1,513 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:79:"/data/home/qxu1141810136/htdocs/blog/application/home/view/index/addbanner.html";i:1511256647;s:78:"/data/home/qxu1141810136/htdocs/blog/application/base/view/base/page_base.html";i:1517543935;}*/ ?>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="lib/html5shiv.js"></script>
+    <script type="text/javascript" src="lib/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/lib/Hui-iconfont/1.0.8/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.zhangheteng.com/Public/css/animate.css" />
+    <!--[if IE 6]>
+    <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+    <script>DD_belatedPNG.fix('*');</script>
+    <![endif]-->
+    <title>zht后台测试系统</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+</head>
+<body>
+
+    
+    <style>
+        .preview{
+            display: none;
+        }
+        .preview .formControls{
+            overflow: hidden;
+            max-height: 300px;
+        }
+        .preview .formControls img{
+            display: block;
+            border: none;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .c-red{color: red;}
+        .switch_box,.switch_box1{
+            width: 80px;
+            height: 30px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 4px;
+            border: 1px solid;
+            border-color: #ccc;
+            position: relative;
+            text-align: left;
+            overflow: hidden;
+            line-height: 8px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+            min-width: 100px;
+            -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            color: #000;
+            background: #eee;
+            color: #333;
+            text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+            background-color: #f0f0f0;
+            background-image: -moz-linear-gradient(top,#e6e6e6,#fff);
+            background-image: -webkit-gradient(linear,0 0,0 100%,from(#e6e6e6),to(#fff));
+            background-image: -webkit-linear-gradient(top,#e6e6e6,#fff);
+            background-image: -o-linear-gradient(top,#e6e6e6,#fff);
+            background-image: linear-gradient(to bottom,#e6e6e6,#fff);
+            background-repeat: repeat-x;
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe6e6e6',endColorstr='#ffffffff',GradientType=0);
+            border-color: #fff #fff #d9d9d9;
+            border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+            filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+            float: left;
+        }
+        .switch_box .switch_btn,.switch_box1 .switch_btn{
+            width: 102px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #2cbb97;
+            position: absolute;
+            top: 0;
+            left: -66px;
+        }
+        .switch_box .switch_btn span,.switch_box1 .switch_btn span{
+            display: block;
+            background-color: #FFFFFF;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            float: right;
+            border-right: 1px solid #ccc;
+        }
+    </style>
+    <nav class="breadcrumb">
+        <i class="Hui-iconfont">&#xe67f;</i> 首页
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 首页管理
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 轮播图管理
+        <span class="c-gray en"><i class="Hui-iconfont">&#xe67e;</i></span> 添加轮播
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+            <i class="Hui-iconfont">&#xe68f;</i>
+        </a>
+    </nav>
+    <div class="page-container">
+        <form action="" method="" class="form form-horizontal" id="form-article-add">
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>选择背景图：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text must" name="bg_img" id="bg_img" value="" placeholder="选择背景图" readonly />
+                </div>
+                <span><input class="btn btn-secondary radius" type="button" id="image1" value="选择图片" /></span>
+            </div>
+            <div class="row cl preview" id="bg_image">
+                <label class="form-label col-xs-4 col-sm-2">背景图预览：</label>
+                <div class="formControls col-xs-8 col-sm-7"></div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>选择内容图：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text must" name="present_img" id="present_img" value="" placeholder="选择内容图" readonly />
+                </div>
+                <span><input class="btn btn-secondary radius" type="button" id="image2" value="选择图片" /></span>
+            </div>
+            <div class="row cl preview" id="present_image">
+                <label class="form-label col-xs-4 col-sm-2">背景图预览：</label>
+                <div class="formControls col-xs-8 col-sm-4"></div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容图入场动画：</label>
+                <div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
+                        <select class="select animate" name="present_img_animate" id="present_img_animate">
+                            <option value="bounceIn">bounceIn</option>
+                            <option value="bounceInDown">bounceInDown</option>
+                            <option value="bounceInLeft">bounceInLeft</option>
+                            <option value="bounceInRight">bounceInRight</option>
+                            <option value="bounceInUp">bounceInUp</option>
+                            <option value="fadeIn">fadeIn</option>
+                            <option value="fadeInDown">fadeInDown</option>
+                            <option value="fadeInDownBig">fadeInDownBig</option>
+                            <option value="fadeInLeft">fadeInLeft</option>
+                            <option value="fadeInLeftBig">fadeInLeftBig</option>
+                            <option value="fadeInRight">fadeInRight</option>
+                            <option value="fadeInRightBig">fadeInRightBig</option>
+                            <option value="fadeInUp">fadeInUp</option>
+                            <option value="fadeInUpBig">fadeInUpBig</option>
+                            <option value="flipInX">flipInX</option>
+                            <option value="flipInY">flipInY</option>
+                            <option value="lightSpeedIn">lightSpeedIn</option>
+                            <option value="rotateIn">rotateIn</option>
+                            <option value="rotateInDownLeft">rotateInDownLeft</option>
+                            <option value="rotateInDownRight">rotateInDownRight</option>
+                            <option value="rotateInUpLeft">rotateInUpLeft</option>
+                            <option value="rotateInUpRight">rotateInUpRight</option>
+                            <option value="rollIn">rollIn</option>
+                            <option value="zoomIn">zoomIn</option>
+                            <option value="zoomInDown">zoomInDown</option>
+                            <option value="zoomInLeft">zoomInLeft</option>
+                            <option value="zoomInRight">zoomInRight</option>
+                            <option value="zoomInUp">zoomInUp</option>
+                        </select>
+                </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容图执行动画时间：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="present_img_duration">
+                            <option value="0.5s">0.5s</option>
+                            <option value="0.6s">0.6s</option>
+                            <option value="0.7s">0.7s</option>
+                            <option value="0.8s">0.8s</option>
+                            <option value="0.9s">0.9s</option>
+                            <option value="1.0s">1.0s</option>
+                            <option value="1.1s">1.1s</option>
+                            <option value="1.2s">1.2s</option>
+                            <option value="1.3s">1.3s</option>
+                            <option value="1.4s">1.4s</option>
+                            <option value="1.5s">1.5s</option>
+                            <option value="1.6s">1.6s</option>
+                            <option value="1.7s">1.7s</option>
+                            <option value="1.8s">1.8s</option>
+                            <option value="1.9s">1.9s</option>
+                            <option value="2.0s">2.0s</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容图延迟动画时间：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="present_img_dealy">
+                            <option value="0.5s">0.5s</option>
+                            <option value="0.6s">0.6s</option>
+                            <option value="0.7s">0.7s</option>
+                            <option value="0.8s">0.8s</option>
+                            <option value="0.9s">0.9s</option>
+                            <option value="1.0s">1.0s</option>
+                            <option value="1.1s">1.1s</option>
+                            <option value="1.2s">1.2s</option>
+                            <option value="1.3s">1.3s</option>
+                            <option value="1.4s">1.4s</option>
+                            <option value="1.5s">1.5s</option>
+                            <option value="1.6s">1.6s</option>
+                            <option value="1.7s">1.7s</option>
+                            <option value="1.8s">1.8s</option>
+                            <option value="1.9s">1.9s</option>
+                            <option value="2.0s">2.0s</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容简介：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <textarea name="new_york" cols="" rows="" class="textarea must"  placeholder="轮播内容简介...最少输入10个字符" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！"></textarea>
+                    <p class="textarea-numberbar"></p>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容简介入场动画：</label>
+                <div class="formControls col-xs-8 col-sm-3"> <span class="select-box">
+                        <select class="select animate" name="new_york_animate" id="new_york_animate">
+                            <option value="bounceIn">bounceIn</option>
+                            <option value="bounceInDown">bounceInDown</option>
+                            <option value="bounceInLeft">bounceInLeft</option>
+                            <option value="bounceInRight">bounceInRight</option>
+                            <option value="bounceInUp">bounceInUp</option>
+                            <option value="fadeIn">fadeIn</option>
+                            <option value="fadeInDown">fadeInDown</option>
+                            <option value="fadeInDownBig">fadeInDownBig</option>
+                            <option value="fadeInLeft">fadeInLeft</option>
+                            <option value="fadeInLeftBig">fadeInLeftBig</option>
+                            <option value="fadeInRight">fadeInRight</option>
+                            <option value="fadeInRightBig">fadeInRightBig</option>
+                            <option value="fadeInUp">fadeInUp</option>
+                            <option value="fadeInUpBig">fadeInUpBig</option>
+                            <option value="flipInX">flipInX</option>
+                            <option value="flipInY">flipInY</option>
+                            <option value="lightSpeedIn">lightSpeedIn</option>
+                            <option value="rotateIn">rotateIn</option>
+                            <option value="rotateInDownLeft">rotateInDownLeft</option>
+                            <option value="rotateInDownRight">rotateInDownRight</option>
+                            <option value="rotateInUpLeft">rotateInUpLeft</option>
+                            <option value="rotateInUpRight">rotateInUpRight</option>
+                            <option value="rollIn">rollIn</option>
+                            <option value="zoomIn">zoomIn</option>
+                            <option value="zoomInDown">zoomInDown</option>
+                            <option value="zoomInLeft">zoomInLeft</option>
+                            <option value="zoomInRight">zoomInRight</option>
+                            <option value="zoomInUp">zoomInUp</option>
+                        </select>
+                </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容简介执行动画时间：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="new_york_duration">
+                            <option value="0.5s">0.5s</option>
+                            <option value="0.6s">0.6s</option>
+                            <option value="0.7s">0.7s</option>
+                            <option value="0.8s">0.8s</option>
+                            <option value="0.9s">0.9s</option>
+                            <option value="1.0s">1.0s</option>
+                            <option value="1.1s">1.1s</option>
+                            <option value="1.2s">1.2s</option>
+                            <option value="1.3s">1.3s</option>
+                            <option value="1.4s">1.4s</option>
+                            <option value="1.5s">1.5s</option>
+                            <option value="1.6s">1.6s</option>
+                            <option value="1.7s">1.7s</option>
+                            <option value="1.8s">1.8s</option>
+                            <option value="1.9s">1.9s</option>
+                            <option value="2.0s">2.0s</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>内容简介延迟动画时间：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="new_york_dealy">
+                            <option value="0.5s">0.5s</option>
+                            <option value="0.6s">0.6s</option>
+                            <option value="0.7s">0.7s</option>
+                            <option value="0.8s">0.8s</option>
+                            <option value="0.9s">0.9s</option>
+                            <option value="1.0s">1.0s</option>
+                            <option value="1.1s">1.1s</option>
+                            <option value="1.2s">1.2s</option>
+                            <option value="1.3s">1.3s</option>
+                            <option value="1.4s">1.4s</option>
+                            <option value="1.5s">1.5s</option>
+                            <option value="1.6s">1.6s</option>
+                            <option value="1.7s">1.7s</option>
+                            <option value="1.8s">1.8s</option>
+                            <option value="1.9s">1.9s</option>
+                            <option value="2.0s">2.0s</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>排版：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <span class="select-box">
+                        <select class="select" name="set_type" id="set_type">
+                            <option value="0">左边文字右边图片</option>
+                            <option value="1">左边图片右边文字</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>排序：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text must" value="" placeholder="排序值" id="sort" name="sort">
+                </div>
+                <span class="c-red">值越大排的越靠前</span>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">链接地址：</label>
+                <div class="formControls col-xs-8 col-sm-3">
+                    <input type="text" class="input-text" value="" placeholder="排序值" id="link" name="link">
+                </div>
+                <span>可不填</span>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">是否启用：</label>
+                <div class="col-sm-5" id="img_text">
+                    <div class="switch_box">
+                        <div class="switch_btn">
+                            <span>否</span>
+                        </div>
+                        <input id="switch_input" name="is_finish" type="hidden" value="0" />
+                    </div>
+                    <!--<span style="display: inline-block; position: relative; top: 4px; left: 10px;font-size: 13px!important; color: #a0a0a0!important;">默认规则只允许有一个，当前为默认后其它的规则将取消默认</span>-->
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="col-xs-8 col-sm-3 col-xs-offset-4 col-sm-offset-2">
+                    <button  onClick="return article_save_submit();" class="btn btn-primary radius" type="button">提交</button>
+                    <button onClick="layer_close();" class="btn btn-default radius ml1r" type="button">取消</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+    <script type="text/javascript" src="//js.users.51.la/19217273.js"></script>
+
+<link rel="stylesheet" href="__PUBLIC__/editor/themes/default/default.css" />
+<script src="__PUBLIC__/editor/kindeditor.js"></script>
+<script src="__PUBLIC__/editor/lang/zh_CN.js"></script>
+<script>
+    function article_save_submit(){
+        var num=0;
+        var str = '';
+        $(".must").each(function () {
+            if ($(this).val() == "") {
+                this.focus();
+                num++;
+                str = $(this).attr("placeholder")+"</br>";
+            }
+
+        });
+        if(num>0)
+        {
+            layer.msg(str);
+            return false;
+        }
+        else
+        {
+            var str = $("#form-article-add").serialize();
+            $.ajax({
+                type: 'POST',
+                url: '<?php echo Url("addbanner"); ?>',
+                data:str,
+                dataType: 'json',
+                success: function(data){
+                    if(data.status=='1'){
+                        layer.msg(data.msg);
+                        setTimeout("location.reload();",3000);
+                    }
+                    if(data.status=='0'){
+                        layer.msg(data.msg);
+                    }
+                },
+                error:function(data) {
+                    if(data.status=='0'){
+                        layer.msg(data.msg);
+                    }
+                },
+            });
+        }
+    };
+
+     KindEditor.ready(function(K) {
+        var editor = K.editor({
+            allowFileManager: true,
+            imgMaxSize: 0.5*1024*1024
+        });
+
+        K('#image1').click(function () {
+            var oldValue = $(this).parents("span").prev("div").children("input").val();         //判断是否多次上传了图片，如果多次上传了则没上传一次都将之前上传的删除
+            editor.loadPlugin('image', function () {
+                editor.plugin.imageDialog({
+                    //imageUrl: K('#bg_img').val(),
+                    clickFn: function (url, title, width, height, border, align) {
+                        if(oldValue != ""){                     //判断是否多次上传了图片，如果多次上传了则没上传一次都将之前上传的删除
+                            $.ajax({
+                                type: 'POST',
+                                data: {path:oldValue},
+                                url: 'http://www.zhangheteng.com/blog/home/editor/deleteImg',
+                                dataType: 'json',
+                            });
+                        }
+                        K('#bg_img').val(url);
+                        K('#bg_image').css({"display":"block"});
+                        K('#bg_image .formControls').html('<img src="' +url + '">');
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+        K('#image2').click(function () {
+            var oldValue = $(this).parents("span").prev("div").children("input").val();     //判断是否多次上传了图片，如果多次上传了则没上传一次都将之前上传的删除
+            var mySize = 0.5*1024*1024;
+            editor.loadPlugin('image', function (mySize) {
+                editor.plugin.imageDialog({
+                    //imageUrl: K('#present_img').val(),
+                    clickFn: function (url, title, width, height, border, align) {
+                        if(oldValue != ""){                 //判断是否多次上传了图片，如果多次上传了则没上传一次都将之前上传的删除
+                            $.ajax({
+                                type: 'POST',
+                                data: {path:oldValue},
+                                url: 'http://www.zhangheteng.com/blog/home/editor/deleteImg',
+                                dataType: 'json',
+                            });
+                        }
+                        K('#present_img').val(url);
+                        K('#present_image').css({"display":"block"});
+                        K('#present_image .formControls').html('<img src="' +url + '">');
+                        editor.hideDialog();
+                    }
+                });
+            });
+        });
+    });
+    $(".textarea").Huitextarealength({
+        minlength:10,
+        maxlength:200
+    });
+    function testAnim(choice,x) {
+        choice.removeClass(x + ' animated').addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass(x + ' animated');
+        });
+    };
+
+    $(document).ready(function(){
+//        $('select.animate').click(function(e){
+//            e.preventDefault();
+//            var anim = $(this).val();
+//            var choice = $(this).parents("div.formControls");
+//            testAnim(choice,anim);
+//        });
+
+        $('.select.animate').change(function(){
+            var anim = $(this).val();
+            var choice = $(this).parents("div.formControls");
+            testAnim(choice,anim);
+        });
+
+    });
+    $(function(){
+        $(".switch_box").on("click",function(){
+            if ($("#switch_input").val() == 0) {
+                $(this).children("div").animate({left: '0px'}, 500);
+                $(this).children("div").children("span").html("是");
+                $(this).children("input").val('1');
+            } else {
+                $(this).children("div").animate({left: '-66px'}, 500);
+                $(this).children("div").children("span").html("否");
+                $(this).children("input").val('0');
+            }
+        });
+    })
+
+</script>
+
+
+</body>
+</html>

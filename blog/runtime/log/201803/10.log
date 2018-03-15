@@ -1,0 +1,100 @@
+---------------------------------------------------------------
+[ 2018-03-10T06:08:31+08:00 ] 121.42.77.167 115.239.212.198 GET /blog/?User-Agent=MQQBrowser%2F38+%28iOS+4%3B+U%3B+CPU+like+Mac+OS+X%3B+zh-cn%29%0A
+[ info ] www.zhangheteng.com/blog/?User-Agent=MQQBrowser%2F38+%28iOS+4%3B+U%3B+CPU+like+Mac+OS+X%3B+zh-cn%29%0A [运行时间：0.063945s][吞吐率：15.64req/s] [内存消耗：3,345.55kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'python-requests/2.13.0',
+)
+[ info ] [ PARAM ] array (
+  'User-Agent' => 'MQQBrowser/38 (iOS 4; U; CPU like Mac OS X; zh-cn)
+',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005458s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001526s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.002271s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001653s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001430s ]
+---------------------------------------------------------------
+[ 2018-03-10T06:08:34+08:00 ] 121.42.77.167 115.239.212.199 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.068544s][吞吐率：14.59req/s] [内存消耗：3,345.80kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'en,*',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.zhangheteng.com',
+  'referer' => 'http://www.baidu.com/s?wd=www',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; SOV33 Build/35.0.D.0.326) AppleWebKit/537.36 (KHTML, like Gecko)Chrome/49.0.2623.91 Mobile Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005767s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002576s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002070s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001418s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001476s ]

@@ -1,0 +1,206 @@
+{extend name="base@base/page_base" /}
+{block name="content"}
+    <style>
+        body{
+            /*background: rgba(0,0,0,0);*/
+        }
+        div.none{
+            width: 80%;
+            height:100px;
+            margin: 0px auto;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+        }
+        .article_list{
+            width: 80%;
+            height: auto;
+            margin: 0px auto;
+            padding: 30px 0;
+            background-color: #FFFFFF;
+        }
+        .content_list{
+            margin: 25px auto;
+            cursor: default;
+            position: relative;
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+        }
+        .content_list:hover{
+            transform: translate(-10px,-7px);
+            -webkit-transform: translate(-7px,-10px);
+            -moz-transform: translate(-7px,-10px);
+            -ms-transform: translate(-7px,-10px);
+            transition: all 0.3s linear;
+            -webkit-transition: all 0.3s linear;
+            -moz-transition: all 0.3s linear;
+            -ms-transition: all 0.3s linear;
+        }
+        .content_list > div{
+            padding: 3px 30px;
+        }
+        .content_list > div.title{
+            background-color: rgba(246, 245, 243, 0.45);
+            height: 30px;
+            line-height: 30px;
+            border-bottom: solid 1px #eee;
+            color: #428BD1;
+        }
+        .content_list > div.title a{
+            color: #428BD1;
+            text-decoration: none;
+        }
+        .content_list > .order_num{
+            padding: 0;
+            width: 25px;
+            height: 25px;
+            border: 1px solid #eee;
+            background-color: rgba(246, 245, 243, 1);
+            line-height: 25px;
+            text-align: center;
+            border-radius: 25px;
+            position: absolute;
+            top: -10px;
+            left: -13px;
+            color: #428BD1;
+        }
+        .content_list > .promulgator{
+            padding: 10px 30px;
+            font-size: 12px;
+            color: #999999;
+        }
+        .content_list > .promulgator > span{
+            padding: 0 10px;
+            border-bottom: 1px dashed #eeeeee;
+        }
+        .content_list > .wrap{
+            font-size: 14px;
+            color: #777;
+            line-height: 24px;
+            font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+            text-indent: 2em;
+        }
+        ul.pagination{
+            width: auto;
+            height: 30px;
+            overflow: hidden;
+            float: right;
+        }
+        ul.pagination  > li{
+            width: 28px;
+            height: 28px;
+            float: left;
+            line-height: 28px;
+            text-align: center;
+            border: 1px solid #000;
+            margin: 0 10px;
+        }
+        ul.pagination  > li.active{
+            background-color: #00a0e9;
+            border: 1px solid #00a0e9 !important;
+            color: #FFFFFF;
+        }
+        ul.pagination  > li > a{
+            display: block;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+        }
+        .operate{
+            height:30px;
+            margin-top: 10px;
+            overflow: hidden;
+            background-color: rgba(246, 245, 243, 0.45);
+            line-height: 30px;
+            border-top: solid 1px #eee;
+            color: #428BD1;
+        }
+        .read_sta{
+            width: auto;
+            overflow: hidden;
+            float: left;
+        }
+        .operate_b{
+            width: auto;
+            overflow: hidden;
+            float: right;
+        }
+    </style>
+
+    <nav class="breadcrumb">
+        <i class="Hui-iconfont">&#xe67f;</i> 首页
+        <span class="c-gray en">&gt;</span> 文章管理
+        <span class="c-gray en">&gt;</span> 我的文章
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" >
+            <i class="Hui-iconfont">&#xe68f;</i>
+        </a>
+    </nav>
+
+    <div class="article_list">
+        <?php if($content['total'] == 0){ ?>
+            <div class="none">暂无任何文章！</div>
+        <?php }else{ ?>
+        <?php foreach( $content['data'] as $k => $v ){ ?>
+        <div class="bk-gray box-shadow radius content_list">
+                <div class="order_num box-shadow"><?php if(!empty($page_num)){echo ($page_num-1)*$content['per_page']+$k+1;}else{ echo $k+1;} ?></div>
+                <div class="title"><a href="/blog/home/editor/article_list/sign/{$v['id']}">{$v['title']}</a></div>
+                <div class="promulgator">
+                    <span><i class="Hui-iconfont">&#xe62c;</i>&nbsp;{$v['user_name']}</span>
+                    <span><i class="Hui-iconfont">&#xe681;</i>&nbsp;{$v['category']}</span>
+                    <span><i class="Hui-iconfont">&#xe606;</i>&nbsp;{:date("Y-m-d H:i",$v['set_time'])}</span>
+                    <span><i class="Hui-iconfont">&#xe725;</i>&nbsp;{:intval($v['page_view'])}</span>
+                </div>
+                <div class="wrap">{$v['wrap']}</div>
+                <div class="operate">
+                    <div class="read_sta">状态：{eq name="$v['show']" value="0"}公开{else /}仅自己可见{/eq}</div>
+                    <div class="operate_b">
+                        <a href="/blog/home/editor/article_list/sign/{$v['id']}"><i class="Hui-iconfont">&#xe725;</i>&nbsp;查看</a>
+                        <a href="javascript:;" data-id="{$v['id']}" data-show="{$v['show']}" onclick="overt(this)">
+                            {eq name="$v['show']" value="1"}
+                            <i class="Hui-iconfont">&#xe6dc;</i>&nbsp;设为公开
+                            {else /}
+                            <i class="Hui-iconfont">&#xe6de;</i>&nbsp;设为仅自己可见
+                            {/eq}
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <?php } ?>
+        <?php } ?>
+        {$list->render()}
+    </div>
+
+{/block}
+
+{block name="js"}
+    <script>
+        function overt(current){
+            var id = $(current).attr("data-id");
+            var show = $(current).attr("data-show");
+            $.ajax({
+                type: 'POST',
+                url: '{:Url("overt")}',
+                data:{id:id,show:show},
+                dataType: 'json',
+                success: function(data){
+                    if(data.status=='1'){
+                        layer.msg(data.msg);
+                        setTimeout("location.reload();",3000);
+                    }
+                    if(data.status=='0'){
+                        layer.msg(data.msg);
+                    }
+                },
+                error:function(data) {
+                    if(data.status=='0'){
+                        layer.msg(data.msg);
+                    }
+                },
+            })
+        }
+    </script>
+{/block}

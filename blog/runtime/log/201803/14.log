@@ -1,0 +1,487 @@
+---------------------------------------------------------------
+[ 2018-03-14T09:57:29+08:00 ] 121.42.77.167 116.54.93.251 GET /blog/
+[ info ] www.zhangheteng.com/blog/ [运行时间：0.119726s][吞吐率：8.35req/s] [内存消耗：3,340.39kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'connection' => 'keep-alive',
+  'cookie' => 'bdshare_firstime=1512720403272; Hm_lvt_244ff9d4fa95dcc8d7e59d2dfaf5b2c4=1519725167; s_fid=06935D3E83661A36-3EA7997D24CF7B2D; s_vnum_n2_us=1%7C1; a7273_times=7; Hm_lvt_080836300300be57b7f34f4b3e97d911=1520387021,1520499747,1520559286,1520920817',
+  'host' => 'www.zhangheteng.com',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /data/home/qxu1141810136/htdocs/blog/application/index/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/index/view/index/index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023934s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.002471s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.001554s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002029s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.002640s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.001709s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.001746s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:37:04+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：1.825835s][吞吐率：0.55req/s] [内存消耗：2,741.89kb] [文件加载：55]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.180563s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.038892s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.033322s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.050118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.033566s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.033973s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.032799s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.032850s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:49:48+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：1.812075s][吞吐率：0.55req/s] [内存消耗：2,553.18kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; a7273_pages=1; a7273_times=1; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%201%2C%20%22expires%22%3A%201521007633794%7D; __51cke__=; __51laig__=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086938s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.037740s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.035954s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.032995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.034518s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.033456s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.033041s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.033327s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:51:12+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：0.420693s][吞吐率：2.38req/s] [内存消耗：2,553.28kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; a7273_pages=2; a7273_times=1; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%202%2C%20%22expires%22%3A%201521008402708%7D; __51cke__=; __51laig__=2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.081338s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.034183s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.033338s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.033028s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.033640s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.037831s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.033305s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.034448s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:51:35+08:00 ] ::1 ::1 GET /blog/index.php
+[ info ] localhost/blog/index.php [运行时间：0.381241s][吞吐率：2.62req/s] [内存消耗：2,553.29kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; a7273_pages=3; a7273_times=1; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%203%2C%20%22expires%22%3A%201521008479266%7D; __51cke__=; __51laig__=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053545s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.035553s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.034876s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.036276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.035113s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.034580s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.034504s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.036002s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:51:37+08:00 ] ::1 ::1 GET /blog/index.php
+[ info ] localhost/blog/index.php [运行时间：0.403226s][吞吐率：2.48req/s] [内存消耗：2,553.29kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; a7273_pages=3; a7273_times=1; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%203%2C%20%22expires%22%3A%201521008479266%7D; __51cke__=; __51laig__=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.058412s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.061278s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.038661s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.038351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.038958s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.038525s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.038511s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.038756s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:51:37+08:00 ] ::1 ::1 GET /blog/index.php
+[ info ] localhost/blog/index.php [运行时间：0.351527s][吞吐率：2.84req/s] [内存消耗：2,553.29kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; a7273_pages=3; a7273_times=1; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%203%2C%20%22expires%22%3A%201521008479266%7D; __51cke__=; __51laig__=3',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.054980s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.036209s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.034900s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.034367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.035503s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.035228s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.035143s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.034733s ]
+---------------------------------------------------------------
+[ 2018-03-14T13:55:15+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：0.361794s][吞吐率：2.76req/s] [内存消耗：2,553.28kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'a7273_pages=4; a7273_times=1; PHPSESSID=of1nqf6et6bk0o5usnp71mts65; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%204%2C%20%22expires%22%3A%201521008534336%7D; __51cke__=; __51laig__=4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053178s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.035859s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.034732s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.034506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.035386s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.035349s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.036349s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.035053s ]
+---------------------------------------------------------------
+[ 2018-03-14T14:25:48+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：1.597471s][吞吐率：0.63req/s] [内存消耗：2,465.33kb] [文件加载：52]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%205%2C%20%22expires%22%3A%201521008750483%7D; __51cke__=; __51laig__=5; a7273_pages=5; a7273_times=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[C:\xampp\htdocs\blog\thinkphp\library\think\db\Connection.php:293]
+---------------------------------------------------------------
+[ 2018-03-14T14:27:50+08:00 ] ::1 ::1 GET /blog/
+[ info ] localhost/blog/ [运行时间：1.151598s][吞吐率：0.87req/s] [内存消耗：2,553.45kb] [文件加载：53]
+[ info ] [ LANG ] C:\xampp\htdocs\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'localhost',
+  'dnt' => '1',
+  'connection' => 'Keep-Alive',
+  'cookie' => 'PHPSESSID=of1nqf6et6bk0o5usnp71mts65; __tins__19217273=%7B%22sid%22%3A%201521005833794%2C%20%22vd%22%3A%205%2C%20%22expires%22%3A%201521008750483%7D; __51cke__=; __51laig__=5; a7273_pages=5; a7273_times=1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\xampp\htdocs\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\xampp\htdocs\blog/application/index\view\index\index.html [ array (
+  0 => 'banner',
+  1 => 'changeTime',
+  2 => 'propose',
+  3 => 'new',
+  4 => 'hot',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'SESSION_EXPIRE' => 60,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.180142s ] mysql:host=localhost;port=3306;dbname=web;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_banner` [ RunTime:0.236125s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_banner` WHERE  `id` <> 1  AND `is_finish` = 1 ORDER BY sort desc [ RunTime:0.024719s ]
+[ sql ] [ SQL ] SELECT `changeTime` FROM `summary_banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.058480s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`status`,`e`.`show`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_propose` `p` ON `p`.`index_id`=`e`.`id` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `p`.`type` = 1 [ RunTime:0.073791s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY set_time desc LIMIT 3 [ RunTime:0.004904s ]
+[ sql ] [ SQL ] SELECT `e`.`id`,`e`.`user_name`,`e`.`set_time`,`e`.`title`,`e`.`category`,`e`.`wrap`,`e`.`page_view`,`u`.`head_portrait` FROM `summary_editor` `e` LEFT JOIN `summary_user` `u` ON `u`.`id`=`e`.`user_id` WHERE  `status` = 1 ORDER BY page_view desc LIMIT 3 [ RunTime:0.002219s ]

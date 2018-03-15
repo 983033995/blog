@@ -1,0 +1,164 @@
+{extend name="base@base/user_page" /}
+{block name="content"}
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/user.css">
+    <div class="u_content_box">
+        <?php if(empty($list)){ ?>
+            <div>该用户不存在！</div>
+        <?php }else{ ?>
+        <div class="u_uc">
+            {eq name="$list['cover_img']" value=""}<img src="http://www.zhangheteng.com/blog/public/editor/attached/image/20171207/20171207093349_40049.png" />{else /}<img src="{$list['cover_img']}" />{/eq}
+            <div class="u_avt_wrap">
+                <div class="u_top_headimg">
+                    {eq name="$list['head_portrait']" value=""}<img src="http://www.zhangheteng.com/forum/Public/images/default_avatar_128_128.jpg" />{else /}<img src="{$list['head_portrait']}" />{/eq}
+                </div>
+                <div class="u_user_name" id="self_name">{$list['user_name']}</div>
+                <div class="u_f_g">
+                    <span><span id="fans_num">{$fans}</span>&nbsp;&nbsp;粉丝</span>
+                    <span class="u_fen_ge">/</span>
+                    <span>{$con_num}&nbsp;&nbsp;关注</span>
+                </div>
+            </div>
+            <div class="u_signature">
+                个性签名：{eq name="$list['signature']" value=""}我也还没想好说什么O(∩_∩)O{else /}{$list['signature']}{/eq}
+            </div>
+            <div class="u_group">
+                {eq name="$follow" value="1"}
+                <div class="u_chart" onclick="start_chart(this)" id="" data-receiver="{$list['id']}" data-sender="{:session('blog["id"]')}">
+                    <i class="icon Hui-iconfont">&#xe6c5;</i>&nbsp;聊天
+                </div>
+                <div class="u_follow" data-follow-who="{$list['id']}" data-who-follow="{:session('blog["id"]')}">
+                    <?php if($con == 0){ ?>
+                    <a onclick="follow(this)" style="background-color: rgba(0,0,0,.45);">
+                        <i class="icon Hui-iconfont">&#xe600;</i>&nbsp;关注
+                    </a>
+                    <?php }else{ ?>
+                    <a onclick="cel_follow(this)" style="background-color: #0079d0;" title="取消关注">已关注</a>
+                    <?php } ?>
+                </div>
+                {/eq}
+            </div>
+        </div>
+
+        <div class="u_cont">
+            <div class="u_cont_left">
+                <div class="u_user_info u_cont_current">资料</div>
+                <div class="u_user_editor" data-id="{$list['user_name']}">文章</div>
+                <div class="u_user_follow" data-id="{$list['id']}">关注</div>
+                <div class="u_user_fans" data-id="{$list['id']}">粉丝</div>
+            </div>
+
+            <div class="u_cont_right">
+                <div class="u_right_user">
+                    <div class="u_user_title">
+                        <div>基本信息</div>
+                    </div>
+                    <div class="u_user_content">
+                        <div class="u_row">
+                            <div class="u_row_tip">昵称：</div>
+                            <div class="u_row_tip_intr">{$list['user_name']}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">性别：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['sex']" value=""}未知{else /}{$list['sex']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">年龄：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['age']" value=""}未知{else /}{$list['age']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">生日：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['birthday']" value=""}未知{else /}{$list['birthday']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">所在地：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['province']" value=""}未知{else /}{$list['province']}-{$list['city']}-{$list['area']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">qq：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['qq_num']" value=""}未知{else /}{$list['qq_num']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">职业：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['job']" value=""}未知{else /}{$list['job']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">擅长技能：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['speciality']" value=""}未知{else /}{$list['speciality']}{/eq}</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">等级：</div>
+                            <div class="u_row_tip_intr"><?php echo (int)$list['grade']; ?>&nbsp;级</div>
+                        </div>
+                        <div class="u_row">
+                            <div class="u_row_tip">个性签名：</div>
+                            <div class="u_row_tip_intr">{eq name="$list['signature']" value=""}我也还没想好说什么O(∩_∩)O{else /}{$list['signature']}{/eq}</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="u_right_load_box">
+
+                </div>
+            </div>
+
+        </div>
+        <?php } ?>
+    </div>
+{/block}
+
+{block name="js"}
+<script type="text/javascript" src="__PUBLIC__/js/user.js"></script>
+<script>
+    function follow(current){           //添加关注
+        var father = $(current).parent('.u_follow');
+        var follow_who = father.attr("data-follow-who");
+        var who_follow = father.attr("data-who-follow");
+        var fans = Number($("#fans_num").text());
+        $.ajax({
+            type : 'POST' ,
+            url: '{:Url("follow")}',
+            data: {follow_who:follow_who,who_follow:who_follow},
+            dataType: 'json',
+            success: function(data){
+                if(data.status=='1'){
+                    layer.msg(data.msg);
+                    var ht = '<a onclick="cel_follow(this)" style="background-color: #0079d0;" title="取消关注">已关注</a>';
+                    father.html(ht);
+                    $("#fans_num").html(fans+1);
+                }else {
+                    layer.msg(data.msg);
+                }
+            },
+            error:function(data) {
+                console.log(data.msg);
+            }
+        });
+    }
+
+    function cel_follow(current){      //取消关注
+        var father = $(current).parent('.u_follow');
+        var follow_who = father.attr("data-follow-who");
+        var who_follow = father.attr("data-who-follow");
+        var fans = Number($("#fans_num").text());
+        $.ajax({
+            type : 'POST' ,
+            url: '{:Url("cel_follow")}',
+            data: {follow_who:follow_who,who_follow:who_follow},
+            dataType: 'json',
+            success: function(data){
+                if(data.status=='1'){
+                    layer.msg(data.msg);
+                    var ht = '<a onclick="follow(this)" style="background-color: rgba(0,0,0,.45);"><i class="icon Hui-iconfont">&#xe600;</i>&nbsp;关注</a>';
+                    father.html(ht);
+                    $("#fans_num").html(fans-1);
+                }else {
+                    layer.msg(data.msg);
+                }
+            },
+            error:function(data) {
+                console.log(data.msg);
+            }
+        });
+    }
+</script>
+{/block}

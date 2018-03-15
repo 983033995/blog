@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[ 2018-01-12T19:37:15+08:00 ] 121.42.77.167 123.125.71.83 GET /blog/home/editor/article_list/sign/*.html
+[ info ] www.zhangheteng.com/blog/home/editor/article_list/sign/*.html [运行时间：0.077436s][吞吐率：12.91req/s] [内存消耗：4,319.88kb] [文件加载：53]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'editor',
+    2 => 'article_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-cn,zh-tw',
+  'connection' => 'close',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)',
+)
+[ info ] [ PARAM ] array (
+  'sign' => '*',
+)
+[ info ] [ RUN ] app\home\controller\Editor->article_list[ /data/home/qxu1141810136/htdocs/blog/application/home/controller/Editor.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /data/home/qxu1141810136/htdocs/blog/application/home/view/editor/article_list.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029739s ] mysql:host=qdm191867626.my3w.com;port=3306;dbname=qdm191867626_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `summary_editor` [ RunTime:0.002267s ]
+[ sql ] [ SQL ] SELECT * FROM `summary_editor` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001608s ]

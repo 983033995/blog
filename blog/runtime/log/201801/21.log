@@ -1,0 +1,47 @@
+---------------------------------------------------------------
+[ 2018-01-21T04:54:06+08:00 ] 121.42.77.167 185.106.121.32 GET /blog/wp-admin/setup-config.php
+[ info ] zhangheteng.com/blog/wp-admin/setup-config.php [运行时间：0.031914s][吞吐率：31.33req/s] [内存消耗：1,954.46kb] [文件加载：40]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-admin',
+    1 => 'setup-config.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'host' => 'zhangheteng.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-01-21T22:52:08+08:00 ] 121.42.77.167 146.185.223.91 GET /blog/wp-includes/wlwmanifest.xml
+[ info ] www.zhangheteng.com/blog/wp-includes/wlwmanifest.xml [运行时间：0.028084s][吞吐率：35.61req/s] [内存消耗：1,954.49kb] [文件加载：40]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'wlwmanifest.xml',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=qc3sb81erlpms80k5pgbkt2la6',
+  'host' => 'www.zhangheteng.com',
+  'keep-alive' => '300',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

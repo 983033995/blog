@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2017-12-02T09:04:31+08:00 ] 121.42.77.167 82.118.242.19 GET /blog/wordpress/wp-admin/setup-config.php
+[ info ] www.zhangheteng.com/blog/wordpress/wp-admin/setup-config.php [运行时间：0.063313s][吞吐率：15.79req/s] [内存消耗：1,943.63kb] [文件加载：40]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wordpress',
+    1 => 'wp-admin',
+    2 => 'setup-config.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'www.zhangheteng.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

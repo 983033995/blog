@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2017-12-10T04:08:14+08:00 ] 121.42.77.167 176.8.89.80 GET /blog/wp-includes/wlwmanifest.xml
+[ info ] www.zhangheteng.com/blog/wp-includes/wlwmanifest.xml [运行时间：0.051783s][吞吐率：19.31req/s] [内存消耗：1,950.72kb] [文件加载：40]
+[ info ] [ LANG ] /data/home/qxu1141810136/htdocs/blog/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'wlwmanifest.xml',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=m2jonprlhdm15dll3rf9sfh0l0',
+  'host' => 'www.zhangheteng.com',
+  'keep-alive' => '300',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
